@@ -5,7 +5,8 @@
     "paths": {
       "@container/*": ["./src/container/*"],
       "@components/*": ["./src/componens/*"],
-      
+      "@constants/*": ["./src/contants/*"],
+
     },
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
