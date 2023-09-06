@@ -1,17 +1,19 @@
 import About from "@container/About"
 import Navbar from "./components/Navbar"
 import { useState } from "react"
+import Hero from "@container/Hero"
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false)
 
   return (
-    <div className={darkTheme ? 'dark' : ''}>
-      <div className="bg-blue-500 dark:bg-zinc-900">
+    <section className={darkTheme ? 'dark' : ''}>
+      <div className="dark:bg-[#252A34] w-full">
         <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+        <Hero/>
         <About/>
       </div>
-    </div>
+    </section>
   )
 }
 
