@@ -1,10 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
 
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  box-sizing: "border-box";
+}
+
+/* fonts */
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Poppins/Poppins-Medium.ttf)
+}
+.font-poppins {
+  font-family: 'poppins', sans-serif;
+}
+
+@font-face {
+  font-family: Paytone;
+  src: url(./fonts/PaytoneOne/PaytoneOne-Regular.ttf)
+}
+.font-paytone {
+  font-family: 'Paytone', sans-serif;
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(./fonts/Outfit/Outfit-Medium.ttf)
+}
+.font-outfit {
+  font-family: 'outfit', sans-serif;
+}
+
+.navbar[data-isOpen="true"] {
+  height: '1080px';
 }
