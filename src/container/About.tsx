@@ -1,8 +1,8 @@
 
 const About = () => {
    return (
-      <div className="">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error quibusdam, molestiae, asperiores cumque exercitationem minima eum consequuntur excepturi impedit perspiciatis necessitatibus quas, libero dolorem possimus ea explicabo cum esse.
+      <div className="w-full h-screen dark:text-white bg-[#FF2E63]">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rem molestiae dolores illum tempora cumque odio at possimus, magni quia doloribus architecto maxime officia aliquam dolor eius consequatur? Nemo, nulla!
       </div>
    )
 }
