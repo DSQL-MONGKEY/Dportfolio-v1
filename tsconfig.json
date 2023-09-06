@@ -5,7 +5,7 @@
     "paths": {
       "@container/*": ["./src/container/*"],
       "@components/*": ["./src/componens/*"],
-      "@constants/*": ["./src/contants/*"],
+      "@constants/*": ["./src/constants/*"],
 
     },
     "useDefineForClassFields": true,
