@@ -25,14 +25,14 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
                   <span className="dark:text-white">
                      |
                   </span> &nbsp;
-                  <span className="text-[#FF2E63]">FE</span>
+                  <span className="text-[#FF2E63]">Dev</span>
                </p>
 
                {/* List Navbar */}
                <ul className="sm:flex hidden justify-end flex-grow justify- items-center gap-4 mr-5 font-poppins text-slate-900 dark:text-[#EAEAEA] font-bold tracking-wider">
                   {navLinks.map(nav => (
                      <li key={nav.title} className="p-1">
-                       <a href={`#${nav.id}`} className="flex gap-2">
+                        <a href={`#${nav.id}`} className="flex gap-2">
                            <span className="text-2xl">
                               {nav.icon}
                            </span> 
@@ -62,7 +62,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
                         <ul className={`flex flex-col  gap-4 font-poppins text-slate-900 dark:text-[#EAEAEA] font-bold tracking-wider`}>
                            {navLinks.map(nav => (
                               <li key={nav.title} className="flex justify-start p-1">
-                                 <a href={`#${nav.id}`} className="flex gap-4">
+                                 <a href={`#${nav.id}`} className="flex gap-3 items-center justify-center">
                                     <span>
                                        {nav.icon}
                                     </span> 

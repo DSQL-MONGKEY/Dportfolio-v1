@@ -1,5 +1,5 @@
 import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview } from "react-icons/go"
-import { GrContact } from "react-icons/gr"
+import { BsChatRightText } from "react-icons/bs"
 
 const navLinks = [
    {
@@ -30,7 +30,7 @@ const navLinks = [
    {
       id: 'contact',
       title: 'Contact',
-      icon: <GrContact/>
+      icon: <BsChatRightText/>
    },
 ]
 
