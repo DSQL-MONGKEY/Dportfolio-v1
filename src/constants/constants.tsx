@@ -29,8 +29,8 @@ const navLinks = [
       icon: <GoProject/>
    },
    {
-      id: 'work',
-      title: 'Works',
+      id: 'experiences',
+      title: 'Experiences',
       icon: <GoWorkflow/>
    },
    {
