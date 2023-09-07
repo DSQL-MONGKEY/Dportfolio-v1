@@ -35,8 +35,12 @@ import nb from './nb.png';
 import skype from './skype.png';
 import spotify from './spotify.png';
 import dlogo from './dlogo.png';
+import dimas from './dimas-photo.png';
+import myCv from './dimas-prasetyo-CV.pdf'
 
 export {
+   myCv,
+   dimas,
    dlogo,
    email,
    mobile,
