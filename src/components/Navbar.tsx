@@ -16,7 +16,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
    const [isOpen, setIsOpen] = useState(false)
    return (
       <>
-         <nav className="fixed top-0 p-3 w-full shadow bg-white 
+         <nav className="fixed z-50 top-0 p-3 w-full shadow bg-white 
          dark:bg-[#252A34] text-center">
 
             {/* Name */}
@@ -78,7 +78,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
 
                {/* Theme Toggle */}
                <div className="flex items-center box-border border-2 border-zinc-900 dark:border-white dark:text-white rounded pr-1 pb-1">
-                  <button onClick={() => setDarkTheme(!darkTheme)} className="box-border border-2 border-zinc-900 dark:border-white rounded p-1 ">
+                  <button onClick={() => setDarkTheme(!darkTheme)} className="box-border border-2 border-zinc-900 dark:border-white rounded p-1">
                      {darkTheme ? 
                      <BsFillSunFill className="text-[20px] border-none"/> : 
                      <BsFillMoonStarsFill className="text-[20px] border-none"/> }
