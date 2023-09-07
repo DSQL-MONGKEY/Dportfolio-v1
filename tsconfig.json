@@ -6,6 +6,7 @@
       "@container/*": ["./src/container/*"],
       "@components/*": ["./src/componens/*"],
       "@constants/*": ["./src/constants/*"],
+      "@assets/*": ["./src/assets/*"]
 
     },
     "useDefineForClassFields": true,
