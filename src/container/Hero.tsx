@@ -12,9 +12,9 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(elRef.current, {
-      strings: ['Mobile Developer', 'Web Designer', 'UI/UX', 'Frontend Developer'],
+      strings: ['Frontend Developer'],
       showCursor: false,
-      typeSpeed: 50,
+      typeSpeed: 100,
       fadeOut: true,
     })
     return () => {
@@ -36,7 +36,7 @@ const Hero = () => {
           </h2>
           <div className="flex gap-3 dark:text-white">
             {socialMedia.map(item => (
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <a key={item.title} href={item.link} target="_blank" rel="noopener noreferrer">
                 {item.icon}
               </a>
             ))}
@@ -55,7 +55,7 @@ const Hero = () => {
           </p>
           <button className="dark:text-white hover:bg-slate-200 hover:dark:text-black duration-100">
             <a href={myCv} target="_blank" rel="noopener noreferrer">
-              Download CV
+              My Resume
             </a>
           </button>
         </div>
