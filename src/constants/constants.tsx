@@ -1,6 +1,9 @@
 import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview } from "react-icons/go"
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
-import { IoSchoolOutline } from "react-icons/io5"
+import { SiMui, SiHtml5, SiXampp } from "react-icons/si"
+import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
+import { FaCss3, FaPhp, FaReact, FaLaravel, FaBootstrap, FaGitAlt, FaFigma } from "react-icons/fa"
+import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode } from "react-icons/tb"
 
 const navLinks = [
    {
@@ -58,4 +61,100 @@ const socialMedia = [
    },
 ]
 
-export { navLinks, socialMedia }
+
+
+const skills = [
+   {
+      title: 'HTML',
+      icon: <SiHtml5/>,
+   },
+   {
+      title: 'CSS',
+      icon: <FaCss3/>,
+   },
+   {
+      title: 'Javascript',
+      icon: <IoLogoJavascript/>,
+   },
+   {
+      title: 'Typescript',
+      icon: <TbBrandTypescript/>,
+   },
+   {
+      title: 'Node Js',
+      icon: <TbBrandTailwind/>,
+   },
+   {
+      title: 'PHP',
+      icon: <FaPhp/>,
+   },
+   {
+      title: 'React Js',
+      icon: <FaReact/>,
+   },
+   {
+      title: 'Next Js',
+      icon: <TbBrandNextjs/>,
+   },
+   {
+      title: 'React Native',
+      icon: <FaReact/>,
+   },
+   {
+      title: 'Laravel',
+      icon: <FaLaravel/>,
+   },
+   {
+      title: 'MySQL',
+      icon: <TbBrandMysql/>,
+   },
+   {
+      title: 'MongoDB',
+      icon: <TbBrandMongodb/>,
+   },
+   {
+      title: 'Tailwind CSS',
+      icon: <SiHtml5/>,
+   },
+   {
+      title: 'Material UI',
+      icon: <SiMui/>,
+   },
+   {
+      title: 'Bootstrap',
+      icon: <FaBootstrap/>,
+   },
+   {
+      title: 'Vite',
+      icon: <TbBrandVite/>,
+   },
+]
+
+const tools = [
+   {
+      title: 'VScode',
+      icon: <TbBrandVscode/>
+   },
+   {
+      title: 'Git',
+      icon: <FaGitAlt/>
+   },
+   {
+      title: 'Github',
+      icon: <BsGithub/>
+   },
+   {
+      title: 'XAMPP',
+      icon: <SiXampp/>
+   },
+   {
+      title: 'Figma',
+      icon: <FaFigma/>
+   },
+   {
+      title: 'Notion',
+      icon: <TbBrandNotion/>
+   },
+]
+
+export { navLinks, socialMedia, skills, tools }
