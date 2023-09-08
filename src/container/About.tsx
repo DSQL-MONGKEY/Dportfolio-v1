@@ -1,6 +1,6 @@
 import { GoQuestion } from "react-icons/go"
 import { styles } from "@constants/styles"
-import Reveal from "./Reveal"
+import Reveal from "@components/Reveal"
 
 const About = () => {
 
