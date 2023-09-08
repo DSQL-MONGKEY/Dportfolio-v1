@@ -1,4 +1,3 @@
-import { Dispatch, SetStateAction } from "react"
 import { useState } from "react"
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs"
 import { BiMenuAltLeft } from "react-icons/bi"
@@ -9,7 +8,7 @@ import { navLinks } from "@constants/constants"
 
 type Props = {
    darkTheme: boolean,
-   setDarkTheme: Dispatch<SetStateAction<boolean>>
+   setDarkTheme: (darkTheme: boolean) => void
 }
 
 const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
