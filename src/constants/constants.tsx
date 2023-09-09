@@ -2,7 +2,7 @@ import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview } from "react-i
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
 import { SiMui, SiHtml5, SiXampp } from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
-import { FaCss3, FaPhp, FaReact, FaLaravel, FaBootstrap, FaGitAlt, FaFigma } from "react-icons/fa"
+import { FaCss3, FaPhp, FaReact, FaLaravel, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode } from "react-icons/tb"
 
 const navLinks = [
@@ -27,13 +27,13 @@ const navLinks = [
       icon: <IoSchoolOutline/>
    },
    {
-      id: 'projects',
-      title: 'Projects',
+      id: 'experiences',
+      title: 'Experiences',
       icon: <GoProject/>
    },
    {
-      id: 'experiences',
-      title: 'Experiences',
+      id: 'projects',
+      title: 'Projects',
       icon: <GoWorkflow/>
    },
    {
@@ -63,7 +63,7 @@ const socialMedia = [
 
 
 
-const skills = [
+const techSkills = [
    {
       title: 'HTML',
       icon: <SiHtml5/>,
@@ -81,12 +81,12 @@ const skills = [
       icon: <TbBrandTypescript/>,
    },
    {
-      title: 'Node Js',
-      icon: <TbBrandTailwind/>,
-   },
-   {
       title: 'PHP',
       icon: <FaPhp/>,
+   },
+   {
+      title: 'Node Js',
+      icon: <FaNodeJs/>,
    },
    {
       title: 'React Js',
@@ -114,7 +114,7 @@ const skills = [
    },
    {
       title: 'Tailwind CSS',
-      icon: <SiHtml5/>,
+      icon: <TbBrandTailwind/>,
    },
    {
       title: 'Material UI',
@@ -157,4 +157,4 @@ const tools = [
    },
 ]
 
-export { navLinks, socialMedia, skills, tools }
+export { navLinks, socialMedia, techSkills, tools }
