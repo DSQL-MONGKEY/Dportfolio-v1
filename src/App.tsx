@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import { useState } from "react"
 import Hero from "@container/Hero"
 import Skills from "@container/Skills"
+import Educations from "@container/Educations"
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false)
@@ -14,6 +15,7 @@ function App() {
         <Hero/>
         <About/>
         <Skills/>
+        <Educations/>
       </div>
     </section>
   )
