@@ -5,13 +5,10 @@ import { IoMdClose } from "react-icons/io"
 import { AnimatePresence, motion } from "framer-motion"
 
 import { navLinks } from "@constants/constants"
+import { NavProps } from "src/types/Nav"
 
-type Props = {
-   darkTheme: boolean,
-   setDarkTheme: (darkTheme: boolean) => void
-}
 
-const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
+const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
    return (
       <>
