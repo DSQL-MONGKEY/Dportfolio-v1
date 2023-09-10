@@ -1,26 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import Typed from "typed.js"
-import { useRef, useEffect } from "react"
-
+import { BsDownload } from "react-icons/bs"
 import { styles } from "@constants/styles"
 import { dimas, myCv } from "@assets/index"
 import { socialMedia } from "@constants/constants"
+import Reveal from "@components/Reveal"
 
 const Hero = () => {
-  const elRef = useRef(null) 
-
-  useEffect(() => {
-    const typed = new Typed(elRef.current, {
-      strings: ['Frontend Developer'],
-      showCursor: false,
-      typeSpeed: 100,
-      fadeOut: true,
-    })
-    return () => {
-      typed.destroy()
-    }
-  },[])
 
   return (
     <section id="home" className={`${styles.padding} min-h-screen w-full`}>
@@ -30,9 +14,16 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} dark:text-white`}>
             Hi There!
           </h1>
-          <h2 className={`${styles.heroSubText} font-black dark:text-white`}>
-            <span>I'm</span>&nbsp;
-            Dimas Prasetyo | <span ref={elRef} />
+          <h2 className={`${styles.heroSubText} flex font-black dark:text-white`}>
+            <Reveal>
+              <>
+                <span>I'm</span>&nbsp;
+                <span> Dimas Prasetyo</span>
+              </>
+            </Reveal> | &nbsp; 
+            <Reveal>
+              <span>Frontend Developer</span>
+            </Reveal>
           </h2>
           <div className="flex gap-3 dark:text-white">
             {socialMedia.map(item => (
@@ -53,8 +44,13 @@ const Hero = () => {
           <p className=" dark:text-white">
             I create stunning website for your business, Intermediate experienced in web design and development.
           </p>
-          <button className="dark:text-white hover:bg-slate-200 hover:dark:text-black duration-100">
-            <a href={myCv} target="_blank" rel="noopener noreferrer">
+          <button className="dark:text-white hover:bg-slate-200 hover:dark:text-black duration-100 hover:scale-105 -translate-x-1 sm:-translate-x-3">
+            <a href={myCv} target="_blank" rel="noopener noreferrer"
+            className="flex justify-center items-center gap-3"
+            >
+              <span className="dark:text-white">
+                <BsDownload/>
+              </span> 
               My Resume
             </a>
           </button>
