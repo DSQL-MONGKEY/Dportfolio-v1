@@ -1,12 +1,9 @@
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useRef, useEffect } from "react"
 
+import { RevealProps } from "src/types/Reveal"
 
-type RevealProps = {
-   children: React.ReactElement,
-}
-
-const Reveal = ({ children }: RevealProps) => {
+const Reveal = ({ delay, children }: RevealProps) => {
    const ref = useRef(null)
    const isInView = useInView(ref, { once: true })
    const mainControls = useAnimation()
@@ -28,7 +25,7 @@ const Reveal = ({ children }: RevealProps) => {
          }}
          initial="hidden"
          animate={mainControls}
-         transition={{ duration: 0.5, delay: 0.25 }}
+         transition={{ duration: 0.5, delay: delay ? delay : 0.25 }}
          > 
             {children}
          </motion.div>
@@ -39,7 +36,7 @@ const Reveal = ({ children }: RevealProps) => {
          }}
          initial="hidden"
          animate={slideControls}
-         transition={{ duration: 0.5, ease: 'easeIn'}}
+         transition={{ duration: 0.5, ease: 'easeIn', delay: delay}}
          style={{ 
             position: 'absolute',
             top: 4,
