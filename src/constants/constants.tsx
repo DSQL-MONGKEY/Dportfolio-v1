@@ -61,8 +61,6 @@ const socialMedia = [
    },
 ]
 
-
-
 const techSkills = [
    {
       title: 'HTML',
@@ -157,4 +155,17 @@ const tools = [
    },
 ]
 
-export { navLinks, socialMedia, techSkills, tools }
+const educations = [
+   {
+      title: 'Citra Negara Vocational High Shcool',
+      major: 'Software Engineer',
+      date: '2020 - 2022',
+   },
+   {
+      title: 'Gunadarma University',
+      major: 'Computer System',
+      date: '2020 - Present',
+   },
+]
+
+export { navLinks, socialMedia, techSkills, tools, educations }
