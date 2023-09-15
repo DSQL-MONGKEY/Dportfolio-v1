@@ -1,9 +1,9 @@
 import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview } from "react-icons/go"
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
-import { SiMui, SiHtml5, SiXampp } from "react-icons/si"
+import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaLaravel, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
-import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode } from "react-icons/tb"
+import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin } from "react-icons/tb"
 
 const navLinks = [
    {
@@ -83,6 +83,10 @@ const techSkills = [
       icon: <FaPhp/>,
    },
    {
+      title: 'Kotlin',
+      icon: <TbBrandKotlin/>,
+   },
+   {
       title: 'Node Js',
       icon: <FaNodeJs/>,
    },
@@ -134,6 +138,14 @@ const tools = [
       icon: <TbBrandVscode/>
    },
    {
+      title: 'IntelliJ IDEA',
+      icon: <SiIntellijidea/>
+   },
+   {
+      title: 'Android Studio',
+      icon: <SiAndroidstudio/>
+   },
+   {
       title: 'Git',
       icon: <FaGitAlt/>
    },
@@ -164,8 +176,16 @@ const educations = [
    {
       title: 'Gunadarma University',
       major: 'Computer System',
-      date: '2020 - Present',
+      date: '2022 - Present',
    },
 ]
 
-export { navLinks, socialMedia, techSkills, tools, educations }
+const awards = [
+   {
+      title: '2nd Winner of Quran Reciter Competition',
+      place: 'Citra Negara Vocational High School',
+      date: 'August - 2021'
+   },
+]
+
+export { navLinks, socialMedia, techSkills, tools, educations, awards }
