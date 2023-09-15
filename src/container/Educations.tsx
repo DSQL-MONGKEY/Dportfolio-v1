@@ -1,4 +1,5 @@
 import Reveal from "@components/Reveal"
+import { awards, educations } from "@constants/constants"
 import { styles } from "@constants/styles"
 
 import { IoSchoolOutline } from "react-icons/io5"
@@ -9,12 +10,74 @@ const Educations = () => {
          <span className="absolute right-0 text-[20px] sm:text-[30px] dark:text-white mr-10 mt-5">
                <IoSchoolOutline/>
          </span>
+         <div className="flex flex-col">
+            <div className="flex">
+               <Reveal>
+                  <h3 className="flex font-outfit text-5xl sm:text-6xl font-black dark:text-white">
+                     Educations
+                  </h3>
+               </Reveal>
+            </div>
+         </div>
          <div className="flex">
             <Reveal>
-               <h3 className="flex font-outfit text-5xl sm:text-6xl font-black dark:text-white">
-                  Educations
-               </h3>
+               <p className="border-l-2 font-outfit text-xl pl-5 dark:text-white mt-5">
+                  <span className="text-[#FF2E63] dark:text-green-600">
+                     Formal Educations & Awards
+                  </span> <br /> 
+                  There are some formal education and awards that i&apos;ve reached
+               </p>
             </Reveal>
+         </div>
+         <div className="flex flex-col sm:flex-row justify-center mt-10 gap-5 dark:text-white font-outfit">
+            <div className="flex flex-col gap-5 border-l-2 pl-2">
+               <p>Educations</p>
+               {educations.map((edu, idx) => (
+                  <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded-sm sm:w-[400px]">
+                     <div className="bg-slate-100 dark:bg-zinc-600 p-2">
+                        <div className="flex mb-2">
+                           <Reveal>
+                              <p>{edu.title}</p>
+                           </Reveal>
+                        </div>
+                        <div className="flex">
+                           <Reveal>
+                              <p>{edu.major}</p>
+                           </Reveal>
+                        </div>
+                        <div>
+                           <Reveal>
+                              <p>{edu.date}</p>
+                           </Reveal>
+                        </div>
+                     </div>
+                  </div>
+               ))}
+            </div>
+            <div className="flex flex-col gap-5 border-l-2 pl-2">
+               <p className="">Awards</p>
+                  {awards.map((award, idx) => (
+                     <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded-sm sm:w-[400px]">
+                        <div className="bg-slate-100 dark:bg-zinc-600 p-2">
+                           <div className="flex mb-2">
+                              <Reveal>
+                                 <p>{award.title}</p>
+                              </Reveal>
+                           </div>
+                           <div className="flex">
+                              <Reveal>
+                                 <p>{award.place}</p>
+                              </Reveal>
+                           </div>
+                           <div className="flex">
+                              <Reveal>
+                                 <p>{award.date}</p>
+                              </Reveal>
+                           </div>
+                        </div>
+                     </div>
+                  ))}
+            </div>
          </div>
       </section>
    )
