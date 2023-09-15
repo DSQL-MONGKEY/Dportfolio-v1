@@ -35,21 +35,24 @@ const Hero = () => {
         </div>
 
         <div className="pt-5 border-4 border-slate-300 dark:border-slate-200 pb-2 w-[175px] sm:w-[435px] rounded-sm">
-          <img src={dimas} alt="dimas-photo"  className="border-4 duration-300 border-slate-300 dark:border-slate-200 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] rounded-sm -translate-x-8 hover:translate-x-8 mx-2 transition-transform"/>
+          <img 
+          src={dimas} 
+          alt="dimas-photo"  
+          className="border-4 duration-300 border-slate-300 dark:border-slate-200 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] rounded-sm -translate-x-8 hover:translate-x-8 mx-2 transition-transform"/>
         </div>
       </div>
 
       <div className="border-y-2 border-l-2 sm:w-1/2 p-2">
         <div className="flex flex-col border-y-2 border-r-2 p-2 font-outfit sm:translate-x-10">
           <p className=" dark:text-white">
-            I create stunning website for your business, Intermediate experienced in web design and development.
+            I create stunning website and UI design for your business, Intermediate experienced in web design and development.
           </p>
           <button className="dark:text-white hover:bg-slate-200 hover:dark:text-black duration-100 hover:scale-105 -translate-x-1 sm:-translate-x-3">
             <a href={myCv} target="_blank" rel="noopener noreferrer"
             className="flex justify-center items-center gap-3"
             >
-              <span className="dark:text-white">
-                <BsDownload/>
+              <span className="text-[#FF2E63] dark:text-green-600">
+                <BsDownload />
               </span> 
               My Resume
             </a>
