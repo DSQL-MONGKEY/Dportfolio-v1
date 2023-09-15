@@ -21,7 +21,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
                   <span className="dark:text-white">
                      |
                   </span> &nbsp;
-                  <span className="text-[#FF2E63]">Dev</span>
+                  <span className="text-[#FF2E63]">Overview</span>
                </p>
 
                {/* List Navbar */}
