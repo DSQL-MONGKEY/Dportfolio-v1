@@ -17,7 +17,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
 
             {/* Name */}
             <div className="flex justify-between items-center">
-               <p className="sm:flex hidden font-poppins font-bold text-xl p-2 text-[#373f4f] dark:text-[#e1e2f4] grow">DIMAS PRASETYO&nbsp;
+               <p className="sm:flex hidden font-poppins font-bold text-md p-2 text-[#373f4f] dark:text-[#e1e2f4] grow">DIMAS PRASETYO&nbsp;
                   <span className="dark:text-white">
                      |
                   </span> &nbsp;
