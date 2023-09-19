@@ -32,9 +32,9 @@ const Skills = () => {
         <Reveal>
           <p className="border-l-2 font-outfit text-xl pl-5 dark:text-white mt-5">
             <span className="text-[#FF2E63] dark:text-green-600">
-              Tech Stack and Tools
+              Tech Stack & Tools
             </span> <br /> 
-            i&apos;ve learned & experienced
+            I&apos;ve learned and experienced
           </p>
         </Reveal>
       </div>
