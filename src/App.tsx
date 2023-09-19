@@ -4,6 +4,7 @@ import { useState } from "react"
 import Hero from "@container/Hero"
 import Skills from "@container/Skills"
 import Educations from "@container/Educations"
+import Experiences from "@container/Experiences"
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false)
@@ -16,6 +17,7 @@ function App() {
         <About/>
         <Skills/>
         <Educations/>
+        <Experiences/>
       </div>
     </section>
   )
