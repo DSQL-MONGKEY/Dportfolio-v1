@@ -180,12 +180,43 @@ const educations = [
    },
 ]
 
-const awards = [
+const license = [
    {
-      title: '2nd Winner of Quran Reciter Competition',
-      place: 'Citra Negara Vocational High School',
-      date: 'August - 2021'
+      title: 'Web Programming',
+      place: 'Badan Nasional Sertifikasi Profesi(BNSP)',
+      date: 'Feb - 2022'
+   },
+   {
+      title: 'Frontend Developer',
+      place: 'Dicoding ID',
+      date: 'August - 2022'
    },
 ]
 
-export { navLinks, socialMedia, techSkills, tools, educations, awards }
+const experience = [
+   {
+      title: 'I constanly seeking an',
+      role: 'Frontend Developer',
+      desc: 'Create frontend application queue puskesmas for passing test of BNSP'
+   },
+   {
+      title: 'I constanly seeking an',
+      role: 'Frontend Developer',
+      desc: 'Create frontend application queue puskesmas for passing test of BNSP'
+   },
+   {
+      title: 'I constanly seeking an',
+      role: 'Frontend Developer',
+      desc: 'Create frontend application queue puskesmas for passing test of BNSP'
+   }
+]
+
+export { 
+   navLinks, 
+   socialMedia, 
+   techSkills, 
+   tools, 
+   educations, 
+   license,
+   experience
+}
