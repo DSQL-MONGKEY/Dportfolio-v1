@@ -7,7 +7,7 @@ const About = () => {
    return (
       <section 
       id="about" 
-      className={`${styles.padding} ${styles.paddingY} w-full h-[650px] sm:h-[600px] dark:text-white`}>
+      className={`${styles.padding} ${styles.paddingY} w-full h-screen dark:text-white`}>
          <span className="absolute my-5 right-0 text-[20px] sm:text-[30px] mr-10">
             <GoQuestion/>
          </span>
@@ -25,17 +25,22 @@ const About = () => {
                <Reveal>
                   <h2 className="text-2xl font-poppins">
                      Wassup homies! <br />
-                     i&apos;m <span className="text-[#FF2E63] dark:text-green-600">
+                     I&apos;m <span className="text-[#FF2E63] dark:text-green-600">
                         Dimas Prasetyo🐼
                         </span>&nbsp; 
                         <br />a <span className="">Frontend Developer</span> based in Indonesia
                   </h2>
                </Reveal>
             </div>
-            <div className="sm:w-1/2">
+            <div className="sm:w-1/2 font-outfit">
                <Reveal>
-                  <p className="font-outfit">
-                  Passionate and seasoned Software Engineer with a strong focus on frontend development. Intermediate experience with Javascript/Typescript and well-versed of frontend technologies. Lifetime learner, always learning something new about technologies that never ends.
+                  <p>
+                  Passionate and seasoned Software Engineer with a strong focus on frontend development. Intermediate experience with Javascript/Typescript and well-versed of frontend technologies. Always passionate and open-minded to learn about new things.
+                  </p>
+               </Reveal><br />
+               <Reveal>
+                  <p>
+                     Above all that, I enjoy design, sports, gaming, and naturally have a good intuitive sense in the art-visual related field, gotchu with that pixel-perfect taste! 🚀✨
                   </p>
                </Reveal>
             </div>
