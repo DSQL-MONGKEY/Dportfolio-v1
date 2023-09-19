@@ -1,12 +1,12 @@
 import Reveal from "@components/Reveal"
-import { awards, educations } from "@constants/constants"
+import { license, educations } from "@constants/constants"
 import { styles } from "@constants/styles"
 
 import { IoSchoolOutline } from "react-icons/io5"
 
 const Educations = () => {
    return (
-      <section className={`${styles.padding} ${styles.paddingY} h-screen`}>
+      <section id="educations" className={`${styles.padding} ${styles.paddingY} h-screen`}>
          <span className="absolute right-0 text-[20px] sm:text-[30px] dark:text-white mr-10 mt-5">
                <IoSchoolOutline/>
          </span>
@@ -23,9 +23,9 @@ const Educations = () => {
             <Reveal>
                <p className="border-l-2 font-outfit text-xl pl-5 dark:text-white mt-5">
                   <span className="text-[#FF2E63] dark:text-green-600">
-                     Formal Educations & Awards
+                     Formal Educations & Licenses
                   </span> <br /> 
-                  There are some formal education and awards that i&apos;ve reached
+                  There are some formal education and licenses that i&apos;ve reached
                </p>
             </Reveal>
          </div>
@@ -55,23 +55,23 @@ const Educations = () => {
                ))}
             </div>
             <div className="flex flex-col gap-5 border-l-2 pl-2">
-               <p className="">Awards</p>
-                  {awards.map((award, idx) => (
+               <p className="">Licenses</p>
+                  {license.map((license, idx) => (
                      <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded-sm sm:w-[400px]">
                         <div className="bg-slate-100 dark:bg-zinc-600 p-2">
                            <div className="flex mb-2">
                               <Reveal>
-                                 <p>{award.title}</p>
+                                 <p>{license.title}</p>
                               </Reveal>
                            </div>
                            <div className="flex">
                               <Reveal>
-                                 <p>{award.place}</p>
+                                 <p>{license.place}</p>
                               </Reveal>
                            </div>
                            <div className="flex">
                               <Reveal>
-                                 <p>{award.date}</p>
+                                 <p>{license.date}</p>
                               </Reveal>
                            </div>
                         </div>
