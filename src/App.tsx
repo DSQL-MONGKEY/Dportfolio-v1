@@ -5,6 +5,7 @@ import Hero from "@container/Hero"
 import Skills from "@container/Skills"
 import Educations from "@container/Educations"
 import Experiences from "@container/Experiences"
+import Projects from "@container/Projects"
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false)
@@ -18,6 +19,7 @@ function App() {
         <Skills/>
         <Educations/>
         <Experiences/>
+        <Projects/>
       </div>
     </section>
   )
