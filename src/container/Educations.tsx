@@ -29,12 +29,12 @@ const Educations = () => {
                </p>
             </Reveal>
          </div>
-         <div className="flex flex-col sm:flex-row justify-center mt-10 gap-5 dark:text-white font-outfit">
+         <div className="flex flex-col sm:flex-row justify-center mt-20 gap-5 dark:text-white font-outfit">
             <div className="flex flex-col gap-5 border-l-2 pl-2">
                <p>Educations</p>
                {educations.map((edu, idx) => (
-                  <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded-sm sm:w-[400px]">
-                     <div className="bg-slate-100 dark:bg-zinc-600 p-2">
+                  <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded sm:w-[400px]">
+                     <div className="bg-slate-100 dark:bg-zinc-800 p-2">
                         <div className="flex mb-2">
                            <Reveal>
                               <p>{edu.title}</p>
@@ -58,7 +58,7 @@ const Educations = () => {
                <p className="">Licenses</p>
                   {license.map((license, idx) => (
                      <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded-sm sm:w-[400px]">
-                        <div className="bg-slate-100 dark:bg-zinc-600 p-2">
+                        <div className="bg-slate-100 dark:bg-zinc-800 p-2">
                            <div className="flex mb-2">
                               <Reveal>
                                  <p>{license.title}</p>
