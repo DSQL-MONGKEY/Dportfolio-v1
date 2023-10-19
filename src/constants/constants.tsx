@@ -2,8 +2,9 @@ import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview } from "react-i
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
 import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
-import { FaCss3, FaPhp, FaReact, FaLaravel, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
+import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin } from "react-icons/tb"
+import { agrokimia, lagundi } from "@assets/index"
 
 const navLinks = [
    {
@@ -103,10 +104,6 @@ const techSkills = [
       icon: <FaReact/>,
    },
    {
-      title: 'Laravel',
-      icon: <FaLaravel/>,
-   },
-   {
       title: 'MySQL',
       icon: <TbBrandMysql/>,
    },
@@ -195,20 +192,17 @@ const license = [
 
 const experience = [
    {
-      title: 'I constanly seeking an',
-      role: 'Frontend Developer',
-      desc: 'Create frontend application queue puskesmas for passing test of BNSP'
+      title: 'PT Agrokimia Asia',
+      logo: agrokimia,
+      role: 'Freelance',
+      desc: 'Create landing page company profile with responsive and modern minimalist design'
    },
    {
-      title: 'I constanly seeking an',
-      role: 'Frontend Developer',
-      desc: 'Create frontend application queue puskesmas for passing test of BNSP'
+      title: 'CV Lagundi Jaya',
+      logo: lagundi,
+      role: 'Freelance',
+      desc: 'Create landing page company profile with responsive and modern minimalist design'
    },
-   {
-      title: 'I constanly seeking an',
-      role: 'Frontend Developer',
-      desc: 'Create frontend application queue puskesmas for passing test of BNSP'
-   }
 ]
 
 export { 
