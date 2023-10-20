@@ -6,6 +6,8 @@ import Skills from "@container/Skills"
 import Educations from "@container/Educations"
 import Experiences from "@container/Experiences"
 import Projects from "@container/Projects"
+import Footer from "@components/Footer"
+import Contact from "@container/Contact"
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false)
@@ -20,6 +22,8 @@ function App() {
         <Educations/>
         <Experiences/>
         <Projects/>
+        <Contact/>
+        <Footer/>
       </div>
     </section>
   )
