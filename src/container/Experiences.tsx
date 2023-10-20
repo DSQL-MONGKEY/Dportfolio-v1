@@ -33,7 +33,7 @@ const Experiences = () => {
       <div className="flex justify-center mt-10">
         <div className="flex p-5 gap-5 flex-col sm:flex-row">
           {experience.map((exp, idx) => (
-            <div key={idx} className="flex flex-col p-2 border-2 border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 w-[500px]">
+            <div key={idx} className="flex flex-col p-2 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 sm:w-[500px]">
               <div className="flex gap-2 items-center mb-2">
                 <img src={exp.logo} alt={exp.title} className="w-[30px] h-[30px] rounded-full" />
                 <p className="font-poppins">
