@@ -12,6 +12,7 @@ export default function OverviewItem({ label, value, unit = '' }: OverviewItemPr
       <span className="text-sm dark:text-neutral-400">{label}</span>
       <div>
         {/* <AnimateCounter className="text-xl lg:text-2xl font-medium text-green-600" total={value} /> */}
+        <p>{value}</p>
         {unit && <span className="text-sm dark:text-neutral-400"> {unit}</span>}
       </div>
     </div>
