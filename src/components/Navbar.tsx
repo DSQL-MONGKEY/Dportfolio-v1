@@ -12,24 +12,24 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
    return (
       <>
-         <nav className="fixed z-50 top-0 p-3 w-full shadow bg-white 
+         <nav className="sticky z-50 top-0 p-3 w-full shadow bg-white 
          dark:bg-[#252A34] text-center">
 
             {/* Name */}
             <div className="flex justify-between items-center">
-               <p className="sm:flex hidden font-poppins font-bold text-md p-2 text-[#373f4f] dark:text-[#e1e2f4] grow">DIMAS PRASETYO&nbsp;
-                  <span className="dark:text-white">
+               <p className="lg:flex hidden font-poppins font-bold text-md p-2 text-[#373f4f] dark:text-[#e1e2f4] grow">DIMAS PRASETYO&nbsp;
+                  <span className="dark:text-white hidden lg:inline">
                      |
                   </span> &nbsp;
-                  <span className="text-[#FF2E63]">Overview</span>
+                  <span className="text-[#FF2E63] hidden lg:inline">Overview</span>
                </p>
 
                {/* List Navbar */}
-               <ul className="sm:flex hidden justify-end flex-grow justify- items-center gap-4 mr-5 font-poppins text-slate-900 dark:text-[#EAEAEA] font-bold tracking-wider">
+               <ul className="lg:flex hidden justify-end flex-grow justify- items-center gap-4 mr-5 font-poppins text-slate-900 dark:text-[#EAEAEA] font-bold tracking-wider">
                   {navLinks.map(nav => (
                      <li key={nav.title} className="p-1">
                         <a href={`#${nav.id}`} className="flex gap-2">
-                           <span className="text-2xl">
+                           <span className="md:text-2xl">
                               {nav.icon}
                            </span> 
                            {nav.title}
@@ -38,7 +38,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
                   ))}
                </ul>
                
-               <div className="flex sm:hidden justify-end flex-col">
+               <div className="flex lg:hidden justify-end flex-col">
                   <button onClick={() => setIsOpen(!isOpen)} className="text-4xl dark:text-white">
                      {isOpen ? <IoMdClose/> : <BiMenuAltLeft/>}
                   </button>
