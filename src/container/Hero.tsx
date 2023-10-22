@@ -49,7 +49,7 @@ const Hero = () => {
           </p>
           <button className="dark:text-white hover:bg-slate-200 hover:dark:text-black duration-100 hover:scale-105 -translate-x-1 sm:-translate-x-3">
             <a href={myCv} target="_blank" rel="noopener noreferrer"
-            className="flex justify-center items-center gap-3"
+            className="flex justify-center items-center gap-3 animate-pulse hover:animate-none"
             >
               <span className="text-[#FF2E63] dark:text-green-600">
                 <BsDownload />
