@@ -1,5 +1,5 @@
 
-import { BsGithub as GithubIcon } from 'react-icons/bs';
+// import { BsGithub as GithubIcon } from 'react-icons/bs';
 
 // import SectionHeading from '@/common/components/elements/SectionHeading';
 // import SectionSubHeading from '@/common/components/elements/SectionSubHeading';
@@ -15,8 +15,8 @@ type ContributionsProps = {
 export default function Contributions({ githubData }: ContributionsProps) {
   return (
     <section className="flex flex-col gap-y-2">
-      <SectionHeading title="Contributions" icon={<GithubIcon className="mr-1" />} />
-      <SectionSubHeading>
+      {/* <div title="Contributions" icon={<GithubIcon className="mr-1" />} /> */}
+      <div>
         <p className="dark:text-neutral-400">My contributions from last year on github.</p>
         <a
           href={`https://github.com/${GITHUB_ACCOUNTS.username}`}
@@ -25,7 +25,7 @@ export default function Contributions({ githubData }: ContributionsProps) {
         >
           @{GITHUB_ACCOUNTS.username}
         </a>
-      </SectionSubHeading>
+      </div>
 
       {!githubData && <div className="dark:text-neutral-400">No Data</div>}
 
