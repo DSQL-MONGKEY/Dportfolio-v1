@@ -205,6 +205,10 @@ const experience = [
    },
 ]
 
+const GITHUB_ACCOUNTS = {
+   username: "DSQL-MONGKEY"
+}
+
 export { 
    navLinks, 
    socialMedia, 
@@ -212,5 +216,6 @@ export {
    tools, 
    educations, 
    license,
-   experience
+   experience,
+   GITHUB_ACCOUNTS
 }
