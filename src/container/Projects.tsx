@@ -1,4 +1,5 @@
 import Reveal from "@components/Reveal"
+import UnderConstruct from "@components/UnderConstruct"
 import { styles } from "@constants/styles"
 import { GoWorkflow } from "react-icons/go"
 
@@ -28,6 +29,9 @@ const Projects = () => {
             </Reveal>
          </div>
 
+         <div className="flex justify-center">
+            <UnderConstruct/>
+         </div>
       </section>
    )
 }
