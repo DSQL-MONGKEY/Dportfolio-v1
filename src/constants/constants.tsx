@@ -3,7 +3,7 @@ import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/
 import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
-import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin } from "react-icons/tb"
+import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail } from "react-icons/tb"
 import { agrokimia, lagundi } from "@assets/index"
 
 const navLinks = [
@@ -60,6 +60,11 @@ const socialMedia = [
       icon: <BsGithub/>,
       link: 'https://github.com/DSQL-MONGKEY'
    },
+   {
+      title: 'Gmail',
+      icon: <TbBrandGmail/>,
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dimasprasetyo7696@gmail.com'
+   }
 ]
 
 const techSkills = [
@@ -167,7 +172,7 @@ const tools = [
 const educations = [
    {
       title: 'Citra Negara Vocational High Shcool',
-      major: 'Software Engineer',
+      major: 'Software Engineering',
       date: '2020 - 2022',
    },
    {
@@ -217,5 +222,5 @@ export {
    educations, 
    license,
    experience,
-   GITHUB_ACCOUNTS
+   GITHUB_ACCOUNTS,
 }
