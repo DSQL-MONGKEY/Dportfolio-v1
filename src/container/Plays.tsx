@@ -1,9 +1,11 @@
 import Reveal from "@components/Reveal"
 import { styles } from "@constants/styles"
 import { BsChatRightText } from "react-icons/bs"
+import { motion } from "framer-motion"
+import UnderConstruct from "@components/UnderConstruct"
 
-
-const Contact = () => {
+const Plays = () => {
+   
 
    return (
       <section id="contact" className={`${styles.padding} ${styles.paddingY} h-screen`}>
@@ -14,23 +16,27 @@ const Contact = () => {
          <div className="flex">
             <Reveal>
                <h3 className="font-outfit text-5xl sm:text-6xl font-black dark:text-white">
-                  Contact
+                  Plays
                </h3>
             </Reveal>
          </div>
 
          <div className="flex">
-         <Reveal>
+            <Reveal>
                <p className="border-l-2 font-outfit text-xl pl-5 dark:text-white mt-5">
                   <span className="text-[#FF2E63] dark:text-green-600">
-                     Get in touch with me
+                     Play with me
                   </span> <br /> 
-                  Feel free to connect 
+                  Do you want to play? Let&apos;s play
                </p>
             </Reveal>
+         </div>
+   
+         <div id="games-container" className="flex p-5 justify-center gap-5 mt-5">
+            <UnderConstruct/>
          </div>
       </section>
    )
 }
 
-export default Contact
+export default Plays
