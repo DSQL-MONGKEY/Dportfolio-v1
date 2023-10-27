@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex flex-col text-white font-outfit mb-5">
           <h5>Dimas Prasetyo</h5>
           <p>
-            Frontend Engineer | Website | Mobile
+            Frontend Developer | Website | Mobile
           </p>
         </div>
 
@@ -31,6 +31,8 @@ const Footer = () => {
             Basically our brains are same, the difference is who "just" tries first and who learns "continuously"
           </p>
         </div>
+
+        
       </div>
     </section>
   )
