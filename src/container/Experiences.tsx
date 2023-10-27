@@ -35,28 +35,39 @@ const Experiences = () => {
           {experience.map((exp, idx) => (
             <div key={idx} className="flex flex-col p-2 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 lg:w-[500px]">
               <div className="flex gap-2 items-center mb-2">
-                <img src={exp.logo} alt={exp.title} className="w-[30px] h-[30px] rounded-full" />
-                <p className="font-poppins">
-                  {exp.title}
-                </p>
+                <Reveal>
+                  <>
+                    <img src={exp.logo} alt={exp.title} className="w-[30px] h-[30px] rounded-full" />
+                    <p className="font-poppins">
+                      {exp.title}
+                    </p>
+                  </>
+                </Reveal>
               </div>
-              <p className="font-outfit">
-                {exp.role}
-              </p>
-              <p>{exp.desc}</p>
+              <Reveal>
+                <p className="font-outfit">
+                  {exp.role}
+                </p>
+              </Reveal>
+              <Reveal>
+                <p>{exp.desc}</p>
+              </Reveal>
             </div>
           ))}
         </div>
 
         <div className="flex flex-col p-5">
           <div className="p-2 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 lg:w-[500px] w-auto">
-            <h4 className="text-3xl font-outfit text-[#FF2E63] dark:text-green-600 font-black animate-pulse">
-              Here
-            </h4>
-            <p className="font-poppins text-lg">
-              My next experience🌌 with you 
-            </p>
-            
+            <Reveal>
+              <>
+                <h4 className="text-3xl font-outfit text-[#FF2E63] dark:text-green-600 font-black animate-pulse">
+                  Here
+                </h4>
+                <p className="font-poppins text-lg">
+                  My next experience🌌 with you 
+                </p>
+              </>
+            </Reveal>
           </div>
         </div>
       </div>
