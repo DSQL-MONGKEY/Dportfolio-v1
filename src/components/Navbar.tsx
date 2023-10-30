@@ -10,7 +10,6 @@ import { NavProps } from "src/types/Nav"
 
 const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
-   const [isClick, setIsClick] = useState(false)
    return (
       <>
          <nav className="sticky z-50 top-0 p-3 w-full shadow bg-white 
