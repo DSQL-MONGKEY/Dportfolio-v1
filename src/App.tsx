@@ -7,7 +7,7 @@ import Educations from "@container/Educations"
 import Experiences from "@container/Experiences"
 import Projects from "@container/Projects"
 import Footer from "@components/Footer"
-import Plays from "@container/Plays"
+import Contact from "@container/Contact"
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false)
@@ -22,7 +22,7 @@ function App() {
         <Educations/>
         <Experiences/>
         <Projects/>
-        <Plays/>
+        <Contact/>
         <Footer/>
       </div>
     </section>

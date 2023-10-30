@@ -1,10 +1,9 @@
 import Reveal from "@components/Reveal"
 import { styles } from "@constants/styles"
 import { BsChatRightText } from "react-icons/bs"
-import { motion } from "framer-motion"
 import UnderConstruct from "@components/UnderConstruct"
 
-const Plays = () => {
+const Contact = () => {
    
 
    return (
@@ -39,4 +38,4 @@ const Plays = () => {
    )
 }
 
-export default Plays
+export default Contact
