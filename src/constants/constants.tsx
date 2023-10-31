@@ -71,101 +71,125 @@ const techSkills = [
    {
       title: 'HTML',
       icon: <SiHtml5/>,
+      level: 'Advanced'
    },
    {
       title: 'CSS',
       icon: <FaCss3/>,
+      level: 'Advanced'
    },
    {
       title: 'Javascript',
       icon: <IoLogoJavascript/>,
+      level: 'Advanced'
    },
    {
       title: 'Typescript',
       icon: <TbBrandTypescript/>,
+      level: 'Advanced'
    },
    {
       title: 'PHP',
       icon: <FaPhp/>,
+      level: 'Basic'
    },
    {
       title: 'Kotlin',
       icon: <TbBrandKotlin/>,
+      level: 'Basic'
    },
    {
       title: 'Node Js',
       icon: <FaNodeJs/>,
+      level: 'Advanced'
    },
    {
       title: 'React Js',
       icon: <FaReact/>,
+      level: 'Advanced'
    },
    {
       title: 'Next Js',
       icon: <TbBrandNextjs/>,
+      level: 'Basic'
    },
    {
       title: 'React Native',
       icon: <FaReact/>,
+      level: 'Basic'
    },
    {
       title: 'MySQL',
       icon: <TbBrandMysql/>,
+      level: 'Intermediete'
    },
    {
       title: 'MongoDB',
       icon: <TbBrandMongodb/>,
+      level: 'Intermediete'
    },
    {
       title: 'Tailwind CSS',
       icon: <TbBrandTailwind/>,
+      level: 'Advanced'
    },
    {
       title: 'Material UI',
       icon: <SiMui/>,
+      level: 'Intermediete'
    },
    {
       title: 'Bootstrap',
       icon: <FaBootstrap/>,
+      level: 'Advanced'
    },
    {
       title: 'Vite',
       icon: <TbBrandVite/>,
+      level: 'Basic'
    },
 ]
 
 const tools = [
    {
       title: 'VScode',
-      icon: <TbBrandVscode/>
+      icon: <TbBrandVscode/>,
+      level: 'Advanced'
    },
    {
       title: 'IntelliJ IDEA',
-      icon: <SiIntellijidea/>
+      icon: <SiIntellijidea/>,
+      level: 'Basic'
    },
    {
       title: 'Android Studio',
-      icon: <SiAndroidstudio/>
+      icon: <SiAndroidstudio/>,
+      level: 'Basic'
    },
    {
       title: 'Git',
-      icon: <FaGitAlt/>
+      icon: <FaGitAlt/>,
+      level: 'Advanced'
    },
    {
       title: 'Github',
-      icon: <BsGithub/>
+      icon: <BsGithub/>,
+      level: 'Advanced'
    },
    {
       title: 'XAMPP',
-      icon: <SiXampp/>
+      icon: <SiXampp/>,
+      level: 'Advanced'
    },
    {
       title: 'Figma',
-      icon: <FaFigma/>
+      icon: <FaFigma/>,
+      level: 'Basic'
    },
    {
       title: 'Notion',
-      icon: <TbBrandNotion/>
+      icon: <TbBrandNotion/>,
+      level: 'Basic'
    },
 ]
 
