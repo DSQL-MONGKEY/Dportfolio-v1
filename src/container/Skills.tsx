@@ -6,9 +6,9 @@ import { techSkills, tools } from "@constants/constants"
 import { styles } from "@constants/styles"
 import Card from "@components/Card"
 
-import { useToast } from "@components/toast/use-toast"
-import { ToastAction } from "@components/toast/toast"
-import { Toaster } from "@components/toast/toaster"
+import { useToast } from "@components/ui/toast/use-toast"
+import { ToastAction } from "@components/ui/toast/toast"
+import { Toaster } from "@components/ui/toast/toaster"
 import { useInView } from "framer-motion"
 
 const Skills = () => {
@@ -24,7 +24,7 @@ const Skills = () => {
     toastTime = setTimeout(() => (
         toast({
           title: "Heii Hoo!",
-          description: "Click the icon to know my knowledge level",
+          description: "Hover the icon to know more",
           action: (
             <ToastAction altText="Goto">Ok!</ToastAction>
           )
