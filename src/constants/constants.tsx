@@ -1,4 +1,4 @@
-import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview, GoBug, GoClockFill, GoDiscussionClosed, GoStarFill } from "react-icons/go"
+import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview, GoBug, GoClockFill, GoDiscussionClosed, GoStarFill, GoNorthStar } from "react-icons/go"
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
 import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
@@ -214,6 +214,12 @@ const softSkills = [
       icon: <GoBug />,
       level: 'Intermediete'
    },
+   {
+      title: 'English',
+      icon: <GoNorthStar />,
+      level: 'Speaking'
+   },
+   
 ]
 
 const educations = [
@@ -229,16 +235,18 @@ const educations = [
    },
 ]
 
-const license = [
+const certificates = [
    {
       title: 'Web Programming',
-      place: 'Badan Nasional Sertifikasi Profesi(BNSP)',
-      date: 'Feb - 2022'
+      institution: 'Badan Nasional Sertifikasi Profesi(BNSP)',
+      date: 'Feb - 2022',
+      image: ''
    },
    {
       title: 'Frontend Developer',
-      place: 'Dicoding ID',
-      date: 'August - 2022'
+      institution: 'Dicoding ID',
+      date: 'August - 2022',
+      image: ''
    },
 ]
 
@@ -268,7 +276,7 @@ export {
    tools, 
    softSkills,
    educations, 
-   license,
+   certificates,
    experience,
    GITHUB_ACCOUNTS,
 }
