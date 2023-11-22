@@ -14,7 +14,7 @@ function App() {
 
   return (
     <section className={darkTheme ? 'dark' : ''}>
-      <div className="dark:bg-[#252A34] transition-colors duration-300 w-full">
+      <div className="dark:bg-[#252A34] transition-colors duration-300 w-full h-full">
         <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
         <Hero/>
         <About/>
