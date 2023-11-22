@@ -35,7 +35,7 @@ const About = () => {
             <div className="sm:w-1/2 font-outfit">
                <Reveal>
                   <p>
-                  Passionate and seasoned Software Engineer with a strong focus on frontend development. Intermediate experience with Javascript/Typescript and well-versed of frontend technologies. Always passionate and open-minded to learn about new things.
+                  Seasoned Software Engineer with a strong focus on frontend development. Intermediate experience with Javascript/Typescript and well-versed of frontend technologies. Always passionate and open-minded to learn about new things.
                   </p>
                </Reveal><br />
                <Reveal>
