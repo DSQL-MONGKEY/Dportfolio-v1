@@ -19,10 +19,10 @@ const Card = ({ items }: CardProps) => {
                <Tooltip>
                   <TooltipTrigger>
                      <div key={item.title} className='flex flex-col items-center'>
-                        <span key={item.title} className='dark:text-white text-xl sm:text-[50px] hover:-translate-y-1 transition ease-in-out'>
+                        <span key={item.title} className='dark:text-white text-xl sm:text-[30px] hover:-translate-y-1 transition ease-in-out'>
                            {item.icon}
                         </span>
-                        <p className='dark:text-white font-poppins'>
+                        <p className='dark:text-white text-sm sm:text[30px] font-poppins'>
                            {item.title}
                         </p>
                      </div>
