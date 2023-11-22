@@ -29,11 +29,13 @@ const Educations = () => {
             </Reveal>
          </div>
          <div className="flex flex-col sm:flex-row justify-center mt-10 sm:mt-20 gap-5 dark:text-white font-outfit">
-            <div className="flex flex-col gap-5 border-l-2 pl-2">
-               <p>Educations</p>
+            <div className="group flex flex-col gap-5 hover:dark:bg-gray-700 p-5 transition ease-in-out duration-200">
+               <p className="bg-slate-100 text-black w-fit px-2 rounded-tr-lg rounded-bl-lg">
+                  Formal Educations
+               </p>
                {educations.map((edu, idx) => (
                   <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded sm:w-[400px]">
-                     <div className="bg-slate-100 dark:bg-zinc-800 p-2">
+                     <div className="bg-slate-100 dark:bg-zinc-900 p-2">
                         <div className="flex mb-2">
                            <Reveal>
                               <p>{edu.title}</p>
@@ -53,29 +55,15 @@ const Educations = () => {
                   </div>
                ))}
             </div>
-            <div className="flex flex-col gap-5 border-l-2 pl-2">
-               <p className="">Licenses</p>
-                  {license.map((license, idx) => (
-                     <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded-sm sm:w-[400px]">
-                        <div className="bg-slate-100 dark:bg-zinc-800 p-2">
-                           <div className="flex mb-2">
-                              <Reveal>
-                                 <p>{license.title}</p>
-                              </Reveal>
-                           </div>
-                           <div className="flex">
-                              <Reveal>
-                                 <p>{license.place}</p>
-                              </Reveal>
-                           </div>
-                           <div className="flex">
-                              <Reveal>
-                                 <p>{license.date}</p>
-                              </Reveal>
-                           </div>
-                        </div>
-                     </div>
-                  ))}
+            <div className="flex flex-col gap-5 p-5">
+               <p className="bg-slate-100 text-black w-fit px-2 rounded-tr-lg rounded-bl-lg">
+                  Certificates
+               </p>
+               <div>
+                  <button>
+                     Show more...
+                  </button>
+               </div>
             </div>
          </div>
       </section>
