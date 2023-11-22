@@ -5,7 +5,7 @@ import { GoWorkflow } from "react-icons/go"
 
 const Projects = () => {
    return (
-      <section className={`${styles.padding} ${styles.paddingY} h-screen dark:text-white mt-10 sm:mt-0`}>
+      <section className={`${styles.padding} ${styles.paddingY} h-full dark:text-white mt-10 sm:mt-0`}>
          <span className="absolute my-5 right-0 text-[20px] sm:text-[30px] mr-10">
             <GoWorkflow/>
          </span>
