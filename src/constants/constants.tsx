@@ -86,7 +86,7 @@ const techSkills = [
    {
       title: 'Typescript',
       icon: <TbBrandTypescript/>,
-      level: 'Advanced'
+      level: 'Basic'
    },
    {
       title: 'PHP',
@@ -101,12 +101,12 @@ const techSkills = [
    {
       title: 'Node Js',
       icon: <FaNodeJs/>,
-      level: 'Advanced'
+      level: 'Intermediete'
    },
    {
       title: 'React Js',
       icon: <FaReact/>,
-      level: 'Advanced'
+      level: 'Intermediete'
    },
    {
       title: 'Next Js',
@@ -136,7 +136,7 @@ const techSkills = [
    {
       title: 'Material UI',
       icon: <SiMui/>,
-      level: 'Intermediete'
+      level: 'Basic'
    },
    {
       title: 'Bootstrap',
@@ -179,7 +179,7 @@ const tools = [
    {
       title: 'XAMPP',
       icon: <SiXampp/>,
-      level: 'Advanced'
+      level: 'Intermediete'
    },
    {
       title: 'Figma',
