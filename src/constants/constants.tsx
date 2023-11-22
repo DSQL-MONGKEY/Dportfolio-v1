@@ -1,4 +1,4 @@
-import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview } from "react-icons/go"
+import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview, GoBug, GoClockFill, GoDiscussionClosed, GoStarFill } from "react-icons/go"
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
 import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
@@ -193,6 +193,29 @@ const tools = [
    },
 ]
 
+const softSkills = [
+   {
+      title: 'Leadership',
+      icon: <GoStarFill />,
+      level: 'Basic'
+   },
+   {
+      title: 'Public Speaking',
+      icon: <GoDiscussionClosed />,
+      level: 'Intermediete'
+   },
+   {
+      title: 'Time Management',
+      icon: <GoClockFill />,
+      level: 'Basic'
+   },
+   {
+      title: 'Problem Solving',
+      icon: <GoBug />,
+      level: 'Intermediete'
+   },
+]
+
 const educations = [
    {
       title: 'Citra Negara Vocational High Shcool',
@@ -243,6 +266,7 @@ export {
    socialMedia, 
    techSkills, 
    tools, 
+   softSkills,
    educations, 
    license,
    experience,
