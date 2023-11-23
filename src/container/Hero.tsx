@@ -34,11 +34,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="pt-5 border-4 border-slate-300 dark:border-slate-200 pb-2 w-[175px] sm:w-[435px] rounded-sm">
+        <div className="flex container justify-center bg-green-300 dark:bg-green-600 rounded-tr-[50px] rounded-bl-[50px] w-[275px]  sm:w-[435px] rounded-sm">
           <img 
-          src={dimas} 
-          alt="dimas-photo"  
-          className="border-4 duration-300 border-slate-300 dark:border-slate-200 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] rounded-sm -translate-x-8 hover:translate-x-8 mx-2 transition-transform"/>
+            src={dimas} 
+            alt="dimas's photo" 
+            className="object-contain rounded z-10"/>
         </div>
       </div>
 
