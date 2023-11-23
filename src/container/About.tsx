@@ -6,8 +6,8 @@ const About = () => {
 
    return (
       <section 
-      id="about" 
-      className={`${styles.padding} ${styles.paddingY} w-full h-full dark:text-white`}>
+         id="about" 
+         className={`${styles.padding} ${styles.paddingY} mb-20 w-full h-full dark:text-white`}>
          <span className="absolute my-5 right-0 text-[20px] sm:text-[30px] mr-10">
             <GoQuestion/>
          </span>

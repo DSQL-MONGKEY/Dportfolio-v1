@@ -7,7 +7,7 @@ import { IoSchoolOutline } from "react-icons/io5"
 
 const Educations = () => {
    return (
-      <section id="educations" className={`${styles.padding} ${styles.paddingY} sm:h-full`}>
+      <section id="educations" className={`${styles.padding} ${styles.paddingY} mb-20 h-full`}>
          <span className="absolute right-0 text-[20px] sm:text-[30px] dark:text-white mr-10 mt-5">
                <IoSchoolOutline/>
          </span>

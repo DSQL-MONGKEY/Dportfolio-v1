@@ -7,8 +7,8 @@ import Reveal from "@components/Reveal"
 const Hero = () => {
 
   return (
-    <section id="home" className={`${styles.padding} min-h-screen w-full`}>
-      <div className={`${styles.paddingY} flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-10`}>
+    <section id="home" className={`${styles.padding} mb-20 h-full w-full`}>
+      <div className={` flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-10`}>
 
         <div className={`font-outfit flex flex-col justify-start items-start w-full`}>
           <h1 className={`${styles.heroHeadText} dark:text-white`}>
@@ -34,11 +34,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex container justify-center bg-green-300 dark:bg-green-600 rounded-tr-[50px] rounded-bl-[50px] w-[275px]  sm:w-[435px] rounded-sm">
+        <div className="flex container justify-center bg-[#ff5680d0] dark:bg-green-600 rounded-tr-[45px] rounded-b-[100px] rounded-bl-[110px] w-[275px] p-2 -translate-y-2 sm:w-[435px]">
           <img 
             src={dimas} 
             alt="dimas's photo" 
-            className="object-contain rounded z-10"/>
+            className="bg-[#FF2E63] dark:bg-green-500 rounded-b-[100px] rounded-tr-[38px] translate-x-2 translate-y-2 dark:border dark:border-green-500"/>
         </div>
       </div>
 
