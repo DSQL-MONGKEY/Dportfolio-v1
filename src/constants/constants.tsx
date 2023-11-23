@@ -224,14 +224,14 @@ const softSkills = [
 
 const educations = [
    {
-      title: 'Citra Negara Vocational High Shcool',
-      major: 'Software Engineering',
-      date: '2020 - 2022',
-   },
-   {
       title: 'Gunadarma University',
       major: 'Computer System',
       date: '2022 - Present',
+   },
+   {
+      title: 'Citra Negara Vocational High Shcool',
+      major: 'Software Engineering',
+      date: '2020 - 2022',
    },
 ]
 
