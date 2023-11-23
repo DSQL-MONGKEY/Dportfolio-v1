@@ -10,6 +10,8 @@ import { NavProps } from "src/types/Nav"
 
 const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
+
+   const handleLinkClicked = () => setIsOpen(false)
    return (
       <>
          <nav className="sticky z-50 top-0 p-3 w-full shadow bg-white 
@@ -57,7 +59,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
                         className={`flex justify-center absolute top-14 left-0 bg-white dark:bg-[#252A34] h-screen w-full`}>
                         <ul className={`flex flex-col  gap-4 font-poppins text-slate-900 dark:text-[#EAEAEA] font-bold tracking-wider`}>
                            {navLinks.map(nav => (
-                              <li key={nav.title} className="flex justify-start p-1">
+                              <li key={nav.title} className="flex justify-start p-1" onClick={handleLinkClicked}>
                                  <a href={`#${nav.id}`} className="flex gap-3 items-center justify-center">
                                     <span>
                                        {nav.icon}
@@ -73,7 +75,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
                </div>
 
                {/* Theme Toggle */}
-               <div className="flex items-center box-border border-2 border-zinc-900 dark:border-white dark:text-white rounded pr-1 pb-1">
+               <div className="flex items-center box-border border-2 border-zinc-900 dark:border-white dark:text-white rounded pr-1 pb-1 active:scale-95">
                   <button onClick={() => setDarkTheme(!darkTheme)} className="box-border border-2 border-zinc-900 dark:border-white rounded p-1">
                      {darkTheme ? 
                      <BsFillSunFill className="text-[20px] border-none"/> : 
