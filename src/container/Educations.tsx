@@ -7,7 +7,7 @@ import { IoSchoolOutline } from "react-icons/io5"
 
 const Educations = () => {
    return (
-      <section id="educations" className={`${styles.padding} ${styles.paddingY} sm:h-screen`}>
+      <section id="educations" className={`${styles.padding} ${styles.paddingY} sm:h-full`}>
          <span className="absolute right-0 text-[20px] sm:text-[30px] dark:text-white mr-10 mt-5">
                <IoSchoolOutline/>
          </span>
@@ -23,13 +23,13 @@ const Educations = () => {
             <Reveal>
                <p className="border-l-2 font-outfit text-xl pl-5 dark:text-white mt-5">
                   <span className="text-[#FF2E63] dark:text-green-600">
-                     Formal Educations & Licenses
+                     Formal Educations & Certificates
                   </span> <br /> 
-                  There are some formal education and licenses that i&apos;ve reached
+                  There are some formal education and certificates that i&apos;ve reached
                </p>
             </Reveal>
          </div>
-         <div className="grid grid-row-2 sm:grid-cols-2 justify-center mt-10 sm:mt-20 gap-5 dark:text-white font-outfit">
+         <div className="grid grid-row-2 md:grid-cols-2 justify-center mt-10 sm:mt-20 gap-5 dark:text-white font-outfit">
             <div className="group flex flex-col gap-5 hover:bg-slate-100 hover:dark:bg-gray-700 p-5 transition ease-in-out duration-300">
                <p className="bg-slate-100 text-black w-fit px-2 rounded-tr-lg rounded-bl-lg">
                   Formal Educations
