@@ -15,7 +15,6 @@ import projectManagement from './certificates/Project Management Basic.webp'
 import reactApp from './certificates/React App.webp'
 
 
-
 export {
    myCv,
    dimas,
