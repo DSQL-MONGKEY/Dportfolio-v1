@@ -4,6 +4,7 @@ import { certificates, educations } from "@constants/constants"
 import { styles } from "@constants/styles"
 
 import { IoSchoolOutline } from "react-icons/io5"
+import { cn } from "../lib/utils"
 
 const Educations = () => {
    return (
@@ -36,7 +37,7 @@ const Educations = () => {
                </p>
                {educations.map((edu, idx) => (
                   <div key={idx} className="bg-slate-200 dark:bg-zinc-700 pt-3 rounded sm:w-[400px]">
-                     <div className="bg-gray-300 dark:bg-zinc-900 p-2">
+                     <div className="bg-slate-300 dark:bg-zinc-900 p-2">
                         <div className="flex mb-2">
                            <Reveal>
                               <p>{edu.title}</p>
@@ -61,9 +62,18 @@ const Educations = () => {
                   Certificates
                </p>
                <ScrollArea>
-                  <div className="p-2">
+                  <div className="grid grid-cols-3 gap-5">
                      {certificates.map((certi, idx) => (
-                        <div key={idx}>{certi.title}</div>
+                        <div key={idx} className="flex flex-col justify-center items-center bg-slate-300 dark:bg-zinc-600 hover:bg-slate-400/50 dark:hover:bg-zinc-900/50 py-2 text-center rounded">
+                           <a href={certi.link} target="_blank" rel="noreferrer noopener">
+                              <img src={certi?.image} alt={certi.title} className="w-[80px] h-[80px]" />
+                           </a>
+                              <div>
+                                 <p className={cn("text-sm",certi.title.length > 16 && "text-[12px]")}>
+                                    {certi.title}
+                                 </p>
+                              </div>
+                        </div>
                      ))}
                   </div>
                </ScrollArea>
