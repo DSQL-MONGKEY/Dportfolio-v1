@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex container justify-center bg-[#ff5680d0] dark:bg-green-600 rounded-tr-[45px] rounded-b-[100px] rounded-bl-[110px] w-[275px] p-2 -translate-y-2 sm:w-[435px]">
+        <div className="flex container justify-center bg-[#ff5680d0] dark:bg-green-600/90 rounded-tr-[45px] rounded-b-[100px] rounded-bl-[110px] w-[275px] p-2 -translate-y-2 sm:w-[435px]">
           <img 
             src={dimas} 
             alt="dimas's photo" 
