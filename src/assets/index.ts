@@ -9,11 +9,12 @@ import lagundi from './lagundi.png'
 import androidBasic from './certificates/Android Basic.webp'
 import backendBeginner from './certificates/Backend Application Beginner.webp'
 import frontendBeginner from './certificates/Frontend Beginner.webp'
+import frontendReact from './certificates/Frontend React.webp'
 import jsBasic from './certificates/JS Basic.webp'
 import kotlinBasic from './certificates/Kotlin Basic.webp'
 import projectManagement from './certificates/Project Management Basic.webp'
 import reactApp from './certificates/React App.webp'
-
+import bnsp from './certificates/BNSP Web Programming.jfif'
 
 export {
    myCv,
@@ -27,5 +28,7 @@ export {
    jsBasic,
    kotlinBasic,
    projectManagement,
-   reactApp
+   reactApp,
+   bnsp,
+   frontendReact
 };
