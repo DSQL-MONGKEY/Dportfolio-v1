@@ -3,19 +3,19 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs"
 import { BiMenuAltLeft } from "react-icons/bi"
 import { IoMdClose } from "react-icons/io"
 import { AnimatePresence, motion } from "framer-motion"
+import { cn } from "../lib/utils"
 
 import { navLinks } from "@constants/constants"
 import { NavProps } from "src/types/Nav"
-
+import { useScrollTop } from "../hooks/use-scroll-top"
 
 const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
-
+   const scrolled = useScrollTop()
    const handleLinkClicked = () => setIsOpen(false)
    return (
       <>
-         <nav className="sticky z-50 top-0 p-3 w-full shadow bg-white 
-         dark:bg-[#252A34] text-center">
+         <nav className={cn("sticky z-50 top-0 p-3 w-full bg-white dark:bg-[#252A34] text-center", scrolled && "boder-b shadow transition duration-300")}>
 
             {/* Name */}
             <div className="flex justify-between items-center">
