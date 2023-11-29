@@ -15,6 +15,8 @@ import kotlinBasic from './certificates/Kotlin Basic.webp'
 import projectManagement from './certificates/Project Management Basic.webp'
 import reactApp from './certificates/React App.webp'
 import bnsp from './certificates/BNSP Web Programming.jfif'
+import sql from './certificates/SQL.webp'
+import sofw from './certificates/Software Engineer Basic.webp'
 
 export {
    myCv,
@@ -30,5 +32,7 @@ export {
    projectManagement,
    reactApp,
    bnsp,
-   frontendReact
+   frontendReact,
+   sql,
+   sofw
 };
