@@ -4,7 +4,7 @@ import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail } from "react-icons/tb"
-import { agrokimia, androidBasic, backendBeginner, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lagundi, projectManagement, reactApp } from "@assets/index"
+import { agrokimia, androidBasic, backendBeginner, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lagundi, projectManagement, reactApp, sofw, sql } from "@assets/index"
 
 const navLinks = [
    {
@@ -241,77 +241,88 @@ const certificates = [
       institution: 'Badan Nasional Sertifikasi Profesi(BNSP)',
       date: 'Feb - 2022',
       image: bnsp,
-      link:''
+      link: undefined,
+      desc: 'Create a web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist'
    },
    {
       title: 'Frontend Developer',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: frontendBeginner,
-      link: 'https://drive.google.com/file/d/1mOsACSrXC97jDDuY1EioAQp-4ag5AZ1E/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/1mOsACSrXC97jDDuY1EioAQp-4ag5AZ1E/view?usp=drive_link',
+      desc: 'Learn about how to start become Frontend Developer also about frontend technologies such like HTML, CSS, Javascript, API and how the browser works'
    },
    {
       title: 'Frontend React',
       institution: 'MySkill',
       date: 'August - 2022',
       image: frontendReact,
-      link: 'https://drive.google.com/file/d/12Tn2FmxjCW6NAP3Z8ynF-PEzsRzTT0hw/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/12Tn2FmxjCW6NAP3Z8ynF-PEzsRzTT0hw/view?usp=drive_link',
+      desc: 'Learn about basic ReactJs the UI Javascript library and build some study case of based on it as like Frontend Developer'
    },
    {
       title: 'React App',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: reactApp,
-      link: 'https://drive.google.com/file/d/1DEEFQr-y_9R1CtpNIGHeUzSRqGYXFKuz/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/1DEEFQr-y_9R1CtpNIGHeUzSRqGYXFKuz/view?usp=drive_link',
+      desc: 'Learn basic ReactJS and create a simple study case with it to have deep understanding about react functional component concept'
    },
    {
       title: 'Android Basic',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: androidBasic,
-      link: 'https://drive.google.com/file/d/1mOsACSrXC97jDDuY1EioAQp-4ag5AZ1E/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/1mOsACSrXC97jDDuY1EioAQp-4ag5AZ1E/view?usp=drive_link',
+      desc: 'Learn basic mobile development especially android OS using kotlin for the main language. For this course i learn many basic concepts like Intent, Activity, Viewport, and also logic behind the application when user request some data (proccess and distrubute them)'
    },
    {
       title: 'Backend Beginner',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: backendBeginner,
-      link: 'https://drive.google.com/file/d/1KAPhr6ZPJbR0UUUUJ42zzN5mu2iidH2n/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/1KAPhr6ZPJbR0UUUUJ42zzN5mu2iidH2n/view?usp=drive_link',
+      desc: 'Learn basic of Backend developer, know how the server response the request and how to handle some specific request from clients'
    },
    {
       title: 'Javascript Basic',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: jsBasic,
-      link: 'https://drive.google.com/file/d/1O2viRHkLdVCZvNWXwNXDDA-bKJqnigdc/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/1O2viRHkLdVCZvNWXwNXDDA-bKJqnigdc/view?usp=drive_link',
+      desc: 'Learn basic Javascript, to become a Frontend and backend Developer learning path in Dicoding'
    },
    {
       title: 'Kotlin Basic',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: kotlinBasic,
-      link: 'https://drive.google.com/file/d/14B9te3yWSyK15mGoXnsOXVzd2vb1UvMX/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/14B9te3yWSyK15mGoXnsOXVzd2vb1UvMX/view?usp=drive_link',
+      desc: 'Learn basic Kotlin for pre-requisite to create android app with kotlin'
    },
    {
       title: 'Project Management Basic',
       institution: 'Dicoding ID',
       date: 'August - 2022',
       image: projectManagement,
-      link: 'https://drive.google.com/file/d/1Xm3KXui_4e1ylDmpB58coCCuRKsJn4l8/view?usp=drive_link'
+      link: 'https://drive.google.com/file/d/1Xm3KXui_4e1ylDmpB58coCCuRKsJn4l8/view?usp=drive_link',
+      desc: 'Learn basic project management about to know how the project flow, how a project planned and how the PM works on it.'
    },
    {
-      title: 'Structured Query Language (SQL)',
+      title: 'SQL Basic',
       institution: 'Dicoding ID',
       date: 'August - 2022',
-      image: undefined,
-      link: 'https://drive.google.com/file/d/11IXJFUHt6p5XLdK2Bf7qxyHFae9LYIay/view?usp=drive_link'
+      image: sql,
+      link: 'https://drive.google.com/file/d/11IXJFUHt6p5XLdK2Bf7qxyHFae9LYIay/view?usp=drive_link',
+      desc: 'Learn basic concept of Structured Query Language for the Relational Database'
    },
    {
       title: 'Software Engineering',
       institution: 'Dicoding ID',
       date: 'August - 2022',
-      image: undefined,
-      link: 'https://drive.google.com/file/d/1Pmi4RsDBa3ideoXHcaVXjaiH62HaoUHy/view?usp=drive_link'
+      image: sofw,
+      link: 'https://drive.google.com/file/d/1Pmi4RsDBa3ideoXHcaVXjaiH62HaoUHy/view?usp=drive_link',
+      desc: 'Learn how to start career as Software Engineer'
    },
    
 ]

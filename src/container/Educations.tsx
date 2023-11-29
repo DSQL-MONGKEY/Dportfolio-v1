@@ -5,6 +5,9 @@ import { styles } from "@constants/styles"
 
 import { IoSchoolOutline } from "react-icons/io5"
 import { cn } from "../lib/utils"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@components/ui/dialog"
+import { Skeleton } from "@components/ui/skeleton"
+
 
 const Educations = () => {
    return (
@@ -64,16 +67,33 @@ const Educations = () => {
                <ScrollArea>
                   <div className="grid grid-cols-3 gap-5">
                      {certificates.map((certi, idx) => (
-                        <div key={idx} className="flex flex-col justify-center items-center bg-slate-300 dark:bg-zinc-600 hover:bg-slate-400/50 dark:hover:bg-zinc-900/50 py-2 text-center rounded">
-                           <a href={certi.link} target="_blank" rel="noreferrer noopener">
-                              <img src={certi?.image} alt={certi.title} className="w-[80px] h-[80px]" />
-                           </a>
-                              <div>
-                                 <p className={cn("text-sm",certi.title.length > 16 && "text-[12px]")}>
-                                    {certi.title}
-                                 </p>
+                        <Dialog key={idx}>
+                           <DialogTrigger>
+                              <div key={certi.title} className="flex flex-col justify-center items-center bg-slate-300 dark:bg-zinc-600 hover:bg-slate-400/50 dark:hover:bg-zinc-900/50 py-2 text-center rounded">
+                                 <div>
+                                    <p className={cn("text-sm",certi.title.length > 16 && "text-[12px]")}>
+                                       {certi.title}
+                                    </p>
+                                 </div>
                               </div>
-                        </div>
+                           </DialogTrigger>
+                           <DialogContent className="sm:max-w-[425px] flex flex-col w-full items-center">
+                              <DialogHeader className="w-full">
+                                 <DialogTitle className="text-lg">
+                                    {certi.title}
+                                 </DialogTitle>
+                                 <DialogDescription>
+                                    {certi.institution}
+                                 </DialogDescription> 
+                              </DialogHeader>
+                                 <a href={certi.link } target="_blank" rel="noreferrer noopener" className={certi.link == undefined ? 'disabled' : certi.link}>
+                                    {}
+                                 </a>
+                              <div>
+                                 {certi.desc}
+                              </div>
+                           </DialogContent>
+                        </Dialog>
                      ))}
                   </div>
                </ScrollArea>
