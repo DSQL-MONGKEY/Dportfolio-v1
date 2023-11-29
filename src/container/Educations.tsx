@@ -6,7 +6,6 @@ import { styles } from "@constants/styles"
 import { IoSchoolOutline } from "react-icons/io5"
 import { cn } from "../lib/utils"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@components/ui/dialog"
-import { Skeleton } from "@components/ui/skeleton"
 
 
 const Educations = () => {
@@ -87,7 +86,7 @@ const Educations = () => {
                                  </DialogDescription> 
                               </DialogHeader>
                                  <a href={certi.link } target="_blank" rel="noreferrer noopener" className={certi.link == undefined ? 'disabled' : certi.link}>
-                                    {}
+                                    <img src={certi.image} alt={certi.title} className="w-[270px] h-[200px]" loading="lazy" />
                                  </a>
                               <div>
                                  {certi.desc}
