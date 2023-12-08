@@ -68,7 +68,7 @@ const Educations = () => {
                      {certificates.map((certi, idx) => (
                         <Dialog key={idx}>
                            <DialogTrigger>
-                              <div key={certi.title} className="flex flex-col justify-center items-center bg-slate-300 dark:bg-zinc-600 hover:bg-slate-400/50 dark:hover:bg-zinc-900/50 py-2 text-center rounded">
+                              <div key={certi.title} className="flex flex-col justify-center items-center bg-slate-300 dark:bg-zinc-600 hover:bg-slate-400/50 dark:hover:bg-zinc-900 py-2 text-center rounded">
                                  <div>
                                     <p className={cn("text-sm",certi.title.length > 16 && "text-[12px]")}>
                                        {certi.title}
