@@ -342,6 +342,84 @@ const experience = [
    },
 ]
 
+const projects = [
+   {
+      title: 'Puskesmas Queue',
+      techStack: [
+         'PHP', 
+         'Laravel-9', 
+         'MySQL', 
+         'Livewire', 
+         'TailwindCSS', 
+         ],
+      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Youtube Clone',
+      techStack: [
+         'Javascript', 
+         'ReactJS', 
+         'Rapid-API', 
+         'TailwindCSS', 
+         ],
+      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Portfolio Website',
+      techStack: [
+         'Typescript', 
+         'ReactJS', 
+         'TailwindCSS', 
+         'Vite',  
+         ],
+      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Google Clone',
+      techStack: [
+         'Javascript', 
+         'ReactJS', 
+         'TailwindCSS', 
+         'Vite',  
+         ],
+      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Notion Clone',
+      techStack: [
+         'Typescript', 
+         'NextJS', 
+         'TailwindCSS', 
+         'MySQL',
+         'Convex',
+         'Clerk'  
+         ],
+      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Cekit',
+      techStack: [
+         'Typescript', 
+         'ReactJS', 
+         'TailwindCSS', 
+         'Vite',  
+         ],
+      desc: 'Website for check the postpaid electricity bills, consume PLN API to get the data. This site will be improve further and will add a new features to it.',
+      image: undefined,
+      link: ''
+   },
+]
+
 const GITHUB_ACCOUNTS = {
    username: "DSQL-MONGKEY"
 }
@@ -356,4 +434,5 @@ export {
    certificates,
    experience,
    GITHUB_ACCOUNTS,
+   projects
 }
