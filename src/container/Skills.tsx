@@ -47,7 +47,7 @@ const Skills = () => {
   }
 
   return (
-    <section id="skills" className={`${styles.padding} ${styles.paddingY} mb-20 h-full`}>
+    <section id="skills" className={`${styles.padding} ${styles.paddingY} mb-20 h-[850px]`}>
       <span className="absolute right-0 text-[20px] sm:text-[30px] dark:text-white mr-10 mt-5">
             <GoCodeReview/>
         </span>
