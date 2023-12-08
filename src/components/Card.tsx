@@ -15,7 +15,7 @@ const Card = ({ items }: CardProps) => {
    return (
       <div className='grid grid-cols-3 sm:grid-cols-4 sm:w-2/3 gap-8 p-5'>
          {items.map((item) => (
-            <TooltipProvider>
+            <TooltipProvider key={item.title}>
                <Tooltip>
                   <TooltipTrigger>
                      <div key={item.title} className='flex flex-col items-center'>
