@@ -1,7 +1,12 @@
 import Reveal from "@components/Reveal"
-import UnderConstruct from "@components/UnderConstruct"
+import { Dialog, DialogContent, DialogHeader } from "@components/ui/dialog"
+import { Skeleton } from "@components/ui/skeleton"
+import { projects } from "@constants/constants"
 import { styles } from "@constants/styles"
+import { DialogTrigger } from "@radix-ui/react-dialog"
 import { GoWorkflow } from "react-icons/go"
+import { FaArrowTurnUp } from "react-icons/fa6";
+
 
 const Projects = () => {
    return (
@@ -29,8 +34,39 @@ const Projects = () => {
             </Reveal>
          </div>
 
-         <div className="flex justify-center">
-            <UnderConstruct/>
+         <div className="flex items-center justify-center mt-20 w-full">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+               {projects.map((project) => (
+                  <div key={project.title} className="max-w-[300px] min-h-[360px] flex flex-col p-2 mb-6 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 gap-2 hover:scale-105 duration-200 transition ease-linear">
+                     <div>
+                        {project.image == undefined ?
+                           <Skeleton className="w-[280px] h-[180px]"/> :
+                           <img src={project.image} alt={project.title} className="w-[280px] h-[180px] rounded" />
+                        }
+                     </div>
+                     <div>
+                        <Reveal>
+                           <p className="text-xl font-poppins">{project.title}</p>
+                        </Reveal>
+                     </div>
+                     <div>
+                        <Reveal>
+                           <p>{project.desc.substring(0, 130).concat(" ...")}</p>
+                        </Reveal>
+                     </div>
+                     <Dialog>
+                        <DialogTrigger className="relative flex items-center justify-center top-1.5 w- rounded-t-full text-xs p-1 gap-2 bg-slate-200 dark:bg-zinc-900 inset-y-4">
+                           <span className="text-slate-400 font-medium">Show more</span> <FaArrowTurnUp className="text-slate-400 dark:text-white" />
+                        </DialogTrigger>
+                        <DialogContent>
+                           <DialogHeader>
+                              <div>{project.desc}</div>
+                           </DialogHeader>
+                        </DialogContent>
+                     </Dialog>
+                  </div>
+               ))}
+            </div>
          </div>
       </section>
    )
