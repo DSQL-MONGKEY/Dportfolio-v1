@@ -1,16 +1,17 @@
 import Reveal from "@components/Reveal"
-import { Dialog, DialogContent, DialogHeader } from "@components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogHeader } from "@components/ui/dialog"
 import { Skeleton } from "@components/ui/skeleton"
 import { projects } from "@constants/constants"
 import { styles } from "@constants/styles"
-import { DialogTrigger } from "@radix-ui/react-dialog"
+import { DialogTitle, DialogTrigger } from "@radix-ui/react-dialog"
 import { GoWorkflow } from "react-icons/go"
 import { FaArrowTurnUp } from "react-icons/fa6";
 
 
 const Projects = () => {
    return (
-      <section id="projects" className={`${styles.padding} ${styles.paddingY} h-full dark:text-white mt-10 sm:mt-0`}>
+      <section id="projects" className={`${styles.padding} ${styles.paddingY} 
+      h-full dark:text-white mt-10`}>
          <span className="absolute my-5 right-0 text-[20px] sm:text-[30px] mr-10">
             <GoWorkflow/>
          </span>
@@ -59,9 +60,26 @@ const Projects = () => {
                            <span className="text-slate-400 font-medium">Show more</span> <FaArrowTurnUp className="text-slate-400 dark:text-white" />
                         </DialogTrigger>
                         <DialogContent>
+                           <DialogTitle>
+                              <span className="text-xl font-black font-outfit">
+                                 {project.title}
+                              </span>
+                           </DialogTitle>
                            <DialogHeader>
-                              <div>{project.desc}</div>
+                              <div className="flex gap-2 text-[14px]">
+                              {project.techStack.map((tech) => (
+                                 <p key={tech.tags} 
+                                 className={`${tech.color} font-outfit`}>
+                                    {tech.tags}
+                                 </p>
+                              ))}
+                              </div>
                            </DialogHeader>
+                           <DialogDescription>
+                              <span>
+                                 {project.desc}
+                              </span>
+                           </DialogDescription>
                         </DialogContent>
                      </Dialog>
                   </div>
