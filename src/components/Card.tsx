@@ -7,7 +7,7 @@ type itemsType = {
    level: string
 }
 
-type CardProps = {
+interface CardProps {
    items: itemsType[],
 }
 
