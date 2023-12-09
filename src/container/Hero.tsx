@@ -3,11 +3,26 @@ import { styles } from "@constants/styles"
 import { dimas, myCv } from "@assets/index"
 import { socialMedia } from "@constants/constants"
 import Reveal from "@components/Reveal"
+import Typed  from "typed.js"
+import { useEffect, useRef } from "react"
 
 const Hero = () => {
+  const ref = useRef(null)
+  
+  useEffect(() => {
+    new Typed(ref.current, {
+      strings: ["Frontend Developer", "Network Engineer", "IoT"],
+      typeSpeed: 60,
+      loop: true,
+      showCursor: false,
+      fadeOut: true,
+      backDelay: 1000
+    });
+
+  },)
 
   return (
-    <section id="home" className={`${styles.padding} mb-20 h-full w-full`}>
+    <section id="home" className={`${styles.padding} mb-20 h-[700px] sm:h-full w-full`}>
       <div className={` flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-10`}>
 
         <div className={`font-outfit flex flex-col justify-start items-start w-full`}>
@@ -22,7 +37,7 @@ const Hero = () => {
               </>
             </Reveal> | &nbsp; 
             <Reveal>
-              <span>Frontend Developer</span>
+              <span ref={ref} />
             </Reveal>
           </h2>
           <div className="flex gap-3 dark:text-white">
