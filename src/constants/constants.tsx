@@ -361,11 +361,26 @@ const projects = [
    {
       title: 'Puskesmas Queue',
       techStack: [
-         'PHP', 
-         'Laravel-9', 
-         'MySQL', 
-         'Livewire', 
-         'TailwindCSS', 
+         {
+            tags: 'PHP',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'Laravel',
+            color: 'text-rose-600'
+         },
+         {
+            tags: 'Livewire',
+            color: 'text-rose-700'
+         },
+         {
+            tags: 'MySQL',
+            color: 'text-green-600'
+         },
+         {
+            tags: 'TailwindCSS',
+            color: 'text-blue-500'
+         },
          ],
       desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
       image: undefined,
@@ -374,62 +389,198 @@ const projects = [
    {
       title: 'Youtube Clone',
       techStack: [
-         'Javascript', 
-         'ReactJS', 
-         'Rapid-API', 
-         'TailwindCSS', 
+         {
+            tags: 'Typescript',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'ReactJS',
+            color: 'text-cyan-600'
+         },
+         {
+            tags: 'Rapid-API',
+            color: 'text-green-500'
+         },
+         {
+            tags: 'TailwindCSS',
+            color: 'text-blue-500'
+         }, 
          ],
-      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      desc: 'This project provides practical experience in software development and an in-depth understanding of the technologies used in the creation of streaming video platforms such as YouTube.\n Frontend development includes user interface (UI) design, responsiveness, and user interaction and consume the API.',
       image: undefined,
       link: ''
    },
    {
       title: 'Portfolio Website',
       techStack: [
-         'Typescript', 
-         'ReactJS', 
-         'TailwindCSS', 
-         'Vite',  
+         {
+            tags: 'Typescript',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'ReactJS',
+            color: 'text-cyan-600'
+         },
+         {
+            tags: 'Rapid-API',
+            color: 'text-green-500'
+         },
+         {
+            tags: 'TailwindCSS',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'Vite',
+            color: 'text-blue-400'
+         },
          ],
-      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      desc: 'My portfolio reflects my journey in the world of development and includes a variety of projects that highlight my technical and creative skills. From intuitive user interface design to developing innovative software solutions, each project has its own unique goals.',
       image: undefined,
       link: ''
    },
    {
       title: 'Google Clone',
       techStack: [
-         'Javascript', 
-         'ReactJS', 
-         'TailwindCSS', 
-         'Vite',  
+         {
+            tags: 'Javascript',
+            color: 'text-yellow-500'
+         },
+         {
+            tags: 'ReactJS',
+            color: 'text-blue-600'
+         },
+         {
+            tags: 'Rapid-API',
+            color: 'text-green-500'
+         },
+         {
+            tags: 'TailwindCSS',
+            color: 'text-blue-800'
+         },  
+         {
+            tags: 'Vite',
+            color: 'text-blue-400'
+         },  
          ],
-      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      desc: 'Creating a copy or clone of Google is an interesting project and can provide experience in several aspects of web development. Implement a search engine that can handle user search queries. Understand search algorithms and how to optimize search results with Google search API.',
       image: undefined,
       link: ''
    },
    {
       title: 'Notion Clone',
       techStack: [
-         'Typescript', 
-         'NextJS', 
-         'TailwindCSS', 
-         'MySQL',
-         'Convex',
-         'Clerk'  
+         {
+            tags: 'Typescript',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'React',
+            color: 'text-cyan-600'
+         },
+         {
+            tags: 'NextJS',
+            color: 'text-zinc-500'
+         },
+         {
+            tags: 'TailwindCSS',
+            color: 'text-blue-500'
+         },  
+         {
+            tags: 'Convex',
+            color: 'text-gray-500'
+         },  
+         {
+            tags: 'Clerk',
+            color: 'text-blue-700'
+         },  
+         {
+            tags: 'MySQL',
+            color: 'text-red-700'
+         },  
          ],
-      desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
+      desc: `Clean and Intuitive User Interface:
+      Clean and intuitive user interface design similar to Notion.
+      Make sure design elements like colors, typography, and icons are consistent.
+      
+      Implement a page and content management system that allows users to easily create, edit, and delete pages.
+      Consider using blocks or modular elements to organize content.
+      
+      Includes a "What You See Is What You Get" (WYSIWYG) editor that makes it easy for users to format and edit text and multimedia content.
+      Add support for various content types, such as text, images, videos, tables, and attached files.
+      Organization and Hierarchy:
+      
+      Implement an organizational system that allows the creation of categories, subcategories, and labels.
+      Consider using a tag or label system to help users organize their content.`,
       image: undefined,
       link: ''
    },
    {
       title: 'Cekit',
       techStack: [
-         'Typescript', 
-         'ReactJS', 
-         'TailwindCSS', 
-         'Vite',  
-         ],
+         {
+            tags: 'Typescript',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'ReactJS',
+            color: 'text-blue-600'
+         },
+         {
+            tags: 'Rapid-API',
+            color: 'text-green-500'
+         },
+         {
+            tags: 'TailwindCSS',
+            color: 'text-blue-500'
+         },
+      ],
       desc: 'Website for check the postpaid electricity bills, consume PLN API to get the data. This site will be improve further and will add a new features to it.',
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Fo-Dashboard UI/UX',
+      techStack: [
+         {
+            tags: 'Figma',
+            color: 'text-blue-500'
+         },
+      ],
+      desc: `This Hotel Front Office Dashboard application UI/UX project explores and presents innovative design solutions to improve the user experience in hotel operational management. Use of user research methods to understand user needs and preferences in hotel operations.
+      Integrate user feedback in the design process to ensure the interface meets expectations and needs.`,
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Mobile App Fo-Dashboard',
+      techStack: [
+         {
+            tags: 'React Native',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'Expo',
+            color: 'text-green-700'
+         },
+      ],
+      desc: `This Hotel Front Office Dashboard application UI/UX project explores and presents innovative design solutions to improve the user experience in hotel operational management. Use of user research methods to understand user needs and preferences in hotel operations.
+      Integrate user feedback in the design process to ensure the interface meets expectations and needs.`,
+      image: undefined,
+      link: ''
+   },
+   {
+      title: 'Mobile App Valoranism',
+      techStack: [
+         {
+            tags: 'Kotlin',
+            color: 'text-blue-500'
+         },
+         {
+            tags: 'Android',
+            color: 'text-green-500'
+         },
+      ],
+      desc: `The practice project in creating a Mobile App Agent Valorant using Kotlin has provided valuable experience in mobile app development, providing an in-depth understanding of various technical aspects and best practices. Merancang sistem navigasi yang intuitif dan pengaturan tampilan yang efektif, memastikan pengguna dapat dengan mudah beralih antara berbagai fitur aplikasi.`,
       image: undefined,
       link: ''
    },
