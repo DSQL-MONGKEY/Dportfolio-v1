@@ -6,7 +6,7 @@ import { GoProject } from "react-icons/go"
 const Experiences = () => {
   
   return (
-    <section id="experiences" className={`${styles.padding} ${styles.paddingY} h-full dark:text-white mt-10 sm:mt-0`}>
+    <section id="experiences" className={`${styles.padding} ${styles.paddingY} h-[700px] sm:h-full dark:text-white mt-10 sm:mt-0`}>
       <span className="absolute my-5 right-0 text-[20px] sm:text-[30px] mr-10">
             <GoProject/>
       </span>
