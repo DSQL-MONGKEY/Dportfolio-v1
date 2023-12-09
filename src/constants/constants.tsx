@@ -1,9 +1,9 @@
 import { GoHome, GoQuestion, GoProject, GoWorkflow, GoCodeReview, GoBug, GoClockFill, GoDiscussionClosed, GoStarFill, GoNorthStar } from "react-icons/go"
 import { BsChatRightText, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
-import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio } from "react-icons/si"
+import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio, SiCisco} from "react-icons/si"
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
-import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs } from "react-icons/fa"
-import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail } from "react-icons/tb"
+import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs, FaPython } from "react-icons/fa"
+import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail, TbBrandGolang} from "react-icons/tb"
 import { agrokimia, androidBasic, backendBeginner, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lagundi, projectManagement, reactApp, sofw, sql } from "@assets/index"
 
 const navLinks = [
@@ -94,6 +94,16 @@ const techSkills = [
       level: 'Basic'
    },
    {
+      title: 'Python',
+      icon: <FaPython/>,
+      level: 'Basic'
+   },
+   {
+      title: 'Golang',
+      icon: <TbBrandGolang />,
+      level: 'Basic'
+   },
+   {
       title: 'Kotlin',
       icon: <TbBrandKotlin/>,
       level: 'Basic'
@@ -162,6 +172,11 @@ const tools = [
       level: 'Basic'
    },
    {
+      title: 'Cisco',
+      icon: <SiCisco/>,
+      level: 'Basic'
+   },
+   {
       title: 'Android Studio',
       icon: <SiAndroidstudio/>,
       level: 'Basic'
@@ -217,7 +232,7 @@ const softSkills = [
    {
       title: 'English',
       icon: <GoNorthStar />,
-      level: 'Speaking'
+      level: 'Speaking - basic'
    },
    
 ]
