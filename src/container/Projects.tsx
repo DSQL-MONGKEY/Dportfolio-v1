@@ -38,7 +38,7 @@ const Projects = () => {
          <div className="flex items-center justify-center mt-20 w-full">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
                {projects.map((project) => (
-                  <div key={project.title} className="max-w-[300px] min-h-[360px] flex flex-col p-2 mb-6 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 gap-2 hover:scale-105 duration-200 transition ease-linear">
+                  <div key={project.title} className="max-w-[300px] min-h-[360px] flex flex-col p-2 mb-6 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 gap-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 duration-200 transition ease-linear">
                      <div>
                         {project.image == undefined ?
                            <Skeleton className="w-[280px] h-[180px]"/> :
