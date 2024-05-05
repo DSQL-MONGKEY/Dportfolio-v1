@@ -4,7 +4,7 @@ import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio, SiCisco} from
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs, FaPython } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail, TbBrandGolang} from "react-icons/tb"
-import { agrokimia, androidBasic, backendBeginner, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lagundi, projectManagement, reactApp, sofw, sql } from "@assets/index"
+import { agrokimia, androidBasic, backendBeginner, bangkit, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lagundi, lepkom, projectManagement, reactApp, sofw, sql } from "@assets/index"
 
 const navLinks = [
    {
@@ -63,7 +63,7 @@ const socialMedia = [
    {
       title: 'Gmail',
       icon: <TbBrandGmail/>,
-      link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dimasprasetyo7696@gmail.com'
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dimasprasetyo.work@gmail.com'
    }
 ]
 
@@ -346,14 +346,22 @@ const experience = [
    {
       title: 'PT Agrokimia Asia',
       logo: agrokimia,
-      role: 'Freelance',
-      desc: 'Create landing page company profile with responsive and modern minimalist design'
+      role: 'Web Dev'
    },
    {
       title: 'CV Lagundi Jaya',
       logo: lagundi,
-      role: 'Freelance',
-      desc: 'Create landing page company profile with responsive and modern minimalist design'
+      role: 'Freelance'
+   },
+   {
+      title: 'Bangkit Academy',
+      logo: bangkit,
+      role: 'Cloud Computing Cohort'
+   },
+   {
+      title: 'Lembaga Pengembangan Komputer UG',
+      logo: lepkom,
+      role: 'Workshop & Certification Profession Assistant'
    },
 ]
 
