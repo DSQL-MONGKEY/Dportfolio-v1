@@ -4,6 +4,8 @@ import dimas from './dimas-photo.png';
 import myCv from './dimas-prasetyo-CV.pdf'
 import agrokimia from './agrokimia.webp'
 import lagundi from './lagundi.png'
+import bangkit from './bangkit.png'
+import lepkom from './lepkom.png'
 
 // Certificates
 import androidBasic from './certificates/Android Basic.webp'
@@ -24,6 +26,8 @@ export {
    dlogo,
    agrokimia,
    lagundi,
+   bangkit,
+   lepkom,
    androidBasic,
    backendBeginner,
    frontendBeginner,
@@ -34,5 +38,5 @@ export {
    bnsp,
    frontendReact,
    sql,
-   sofw
+   sofw,
 };
