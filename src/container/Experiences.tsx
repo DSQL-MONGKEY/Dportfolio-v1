@@ -31,26 +31,23 @@ const Experiences = () => {
         </div>
 
       <div className="flex flex-col sm:items-center mt-10">
-        <div className="flex p-5 gap-5 flex-col sm:flex-row justify-center">
+        <div className="grid grid-cols-2 p-5 gap-5 w-full">
           {experience.map((exp, idx) => (
-            <div key={idx} className="flex flex-col p-2 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 lg:w-[500px]">
+            <div key={idx} className="flex flex-col p-2 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 w-[150px] lg:w-[500px]">
               <div className="flex gap-2 items-center mb-2">
                 <Reveal>
                   <>
                     <img src={exp.logo} alt={exp.title} className="w-[30px] h-[30px] rounded-full" />
-                    <p className="font-poppins">
+                    <p className={'font-poppins text-[13px] sm:text-[16px] mt-2'}>
                       {exp.title}
                     </p>
                   </>
                 </Reveal>
               </div>
               <Reveal>
-                <p className="font-outfit">
+                <p className="font-outfit hidden sm:block text-[#256e66] text-[13px]">
                   {exp.role}
                 </p>
-              </Reveal>
-              <Reveal>
-                <p>{exp.desc}</p>
               </Reveal>
             </div>
           ))}
