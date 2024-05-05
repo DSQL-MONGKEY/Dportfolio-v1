@@ -594,6 +594,59 @@ const projects = [
    },
 ]
 
+const cards = [
+   {
+      id:0,
+      name: 'Steve Jobs',
+      designation: 'co-founder of Apple',
+      content: (
+         <p>
+         The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.
+         </p>
+      )
+   },
+   {
+      id:1,
+      name: 'Confucius',
+      designation: 'Chinese philosopher',
+      content: (
+         <p>
+         It does not matter how slowly you go as long as you do not stop.
+         </p>
+      )
+   },
+   {
+      id:2,
+      name: 'Michael Jordan',
+      designation: 'Pro Basketball Player',
+      content: (
+         <p>
+            I always strive to give my best and never stop practicing
+         </p>
+      )
+   },
+   {
+      id:3,
+      name: 'Muhammad Ali',
+      designation: 'Legendary boxer',
+      content: (
+         <p>
+         A champion is someone who never gives up, even when he knows he's out of chances.
+         </p>
+      )
+   },
+   {
+      id:4,
+      name: 'Dimas Prasetyo(me)',
+      designation: 'Software Engineer',
+      content: (
+         <p>
+         There's a price to pay for a goal
+         </p>
+      )
+   },
+]
+
 const GITHUB_ACCOUNTS = {
    username: "DSQL-MONGKEY"
 }
@@ -608,5 +661,6 @@ export {
    certificates,
    experience,
    GITHUB_ACCOUNTS,
-   projects
+   projects,
+   cards
 }
