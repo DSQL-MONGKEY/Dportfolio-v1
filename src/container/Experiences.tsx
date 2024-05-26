@@ -37,7 +37,7 @@ const Experiences = () => {
               <div className="flex gap-2 items-center mb-2">
                 <Reveal>
                   <>
-                    <img src={exp.logo} alt={exp.title} className="w-[30px] h-[30px] rounded-full" />
+                    <img src={exp.logo} alt={exp.title} className="w-[40px] h-[40px] rounded-full" />
                     <p className={'font-poppins text-[13px] sm:text-[16px] mt-2'}>
                       {exp.title}
                     </p>
