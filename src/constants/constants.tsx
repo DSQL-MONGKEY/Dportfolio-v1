@@ -4,7 +4,7 @@ import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio, SiCisco} from
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs, FaPython } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail, TbBrandGolang} from "react-icons/tb"
-import { agrokimia, androidBasic, backendBeginner, bangkit, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lagundi, lepkom, projectManagement, reactApp, sofw, sql } from "@assets/index"
+import { androidBasic, backendBeginner, bangkit, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lepkom, projectManagement, reactApp, sofw, sql } from "@assets/index"
 
 const navLinks = [
    {
@@ -343,16 +343,6 @@ const certificates = [
 ]
 
 const experience = [
-   {
-      title: 'PT Agrokimia Asia',
-      logo: agrokimia,
-      role: 'Web Dev'
-   },
-   {
-      title: 'CV Lagundi Jaya',
-      logo: lagundi,
-      role: 'Freelance'
-   },
    {
       title: 'Bangkit Academy',
       logo: bangkit,
