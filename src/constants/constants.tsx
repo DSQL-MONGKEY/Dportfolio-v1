@@ -4,7 +4,7 @@ import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio, SiCisco} from
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs, FaPython } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail, TbBrandGolang} from "react-icons/tb"
-import { androidBasic, backendBeginner, bangkit, bnsp, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lepkom, projectManagement, reactApp, sofw, sql } from "@assets/index"
+import { androidBasic, backendBeginner, bangkit, bnsp, fo, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lepkom, projectManagement, reactApp, sofw, sql, uiux, valo } from "@assets/index"
 
 const navLinks = [
    {
@@ -546,8 +546,8 @@ const projects = [
       ],
       desc: `This Hotel Front Office Dashboard application UI/UX project explores and presents innovative design solutions to improve the user experience in hotel operational management. Use of user research methods to understand user needs and preferences in hotel operations.
       Integrate user feedback in the design process to ensure the interface meets expectations and needs.`,
-      image: undefined,
-      link: ''
+      image: uiux,
+      link: 'https://www.figma.com/proto/hyJkJl3QVX3J3c0uAlF0CA/fo-dashboard?node-id=45-117'
    },
    {
       title: 'Mobile App Fo-Dashboard',
@@ -557,14 +557,26 @@ const projects = [
             color: 'text-blue-500'
          },
          {
-            tags: 'Expo',
+            tags: 'Expo / React-Native CLI',
             color: 'text-green-700'
+         },
+         {
+            tags: 'Firebase',
+            color: 'text-yellow-700'
+         },
+         {
+            tags: 'Typescript',
+            color: 'text-blue-700'
+         },
+         {
+            tags: 'Zustand',
+            color: 'text-rose-700'
          },
       ],
       desc: `This Hotel Front Office Dashboard application UI/UX project explores and presents innovative design solutions to improve the user experience in hotel operational management. Use of user research methods to understand user needs and preferences in hotel operations.
       Integrate user feedback in the design process to ensure the interface meets expectations and needs.`,
-      image: undefined,
-      link: ''
+      image: fo,
+      link: 'https://github.com/DSQL-MONGKEY/front-office-hotels'
    },
    {
       title: 'Mobile App Valoranism',
@@ -579,7 +591,7 @@ const projects = [
          },
       ],
       desc: `The practice project in creating a Mobile App Agent Valorant using Kotlin has provided valuable experience in mobile app development, providing an in-depth understanding of various technical aspects and best practices. Merancang sistem navigasi yang intuitif dan pengaturan tampilan yang efektif, memastikan pengguna dapat dengan mudah beralih antara berbagai fitur aplikasi.`,
-      image: undefined,
+      image: valo,
       link: ''
    },
 ]

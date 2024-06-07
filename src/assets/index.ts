@@ -20,6 +20,13 @@ import bnsp from './certificates/BNSP Web Programming.jfif'
 import sql from './certificates/SQL.webp'
 import sofw from './certificates/Software Engineer Basic.webp'
 
+
+// Projects
+import uiux from './projects/uiuxfo.png'
+import fo from './projects/fo.png'
+import valo from './projects/valoranism.png'
+
+
 export {
    myCv,
    dimas,
@@ -39,4 +46,7 @@ export {
    frontendReact,
    sql,
    sofw,
+   uiux,
+   fo,
+   valo
 };
