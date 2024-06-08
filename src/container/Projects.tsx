@@ -39,7 +39,7 @@ const Projects = () => {
          <div className="flex items-center justify-center mt-20 w-full">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
                {projects.map((project) => (
-                  <div key={project.title} className="max-w-[300px] min-h-[360px] flex flex-col p-2 mb-6 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 gap-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 duration-200 transition ease-linear">
+                  <div key={project.title} className="group max-w-[300px] min-h-[360px] flex flex-col p-2 mb-6 border-2 dark:border-green-500 rounded dark:bg-zinc-800 shadow-xl dark:shadow-slate-200/10 gap-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 duration-200 transition ease-linear">
                      <div>
                         {project.image == undefined ?
                            <Skeleton className="w-[280px] h-[180px]"/> :
@@ -57,7 +57,7 @@ const Projects = () => {
                         </Reveal>
                      </div>
                      <Dialog>
-                        <DialogTrigger className="relative flex items-center justify-center top-1.5 w- rounded-t-full text-xs p-1 gap-2 bg-slate-200 dark:bg-zinc-900 inset-y-4">
+                        <DialogTrigger className="relative flex items-center justify-center top-1.5 w- rounded-t-full text-xs p-1 gap-2 bg-slate-200 dark:bg-zinc-900 group-hover:dark:bg-slate-800 inset-y-4">
                            <span className="text-slate-400 font-medium">Show more</span> <FaArrowTurnUp className="text-slate-400 dark:text-white" />
                         </DialogTrigger>
                         <DialogContent>
