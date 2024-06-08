@@ -4,7 +4,7 @@ import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio, SiCisco} from
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs, FaPython } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail, TbBrandGolang} from "react-icons/tb"
-import { androidBasic, backendBeginner, bangkit, bnsp, fo, frontendBeginner, frontendReact, jsBasic, kotlinBasic, lepkom, projectManagement, reactApp, sofw, sql, uiux, valo } from "@assets/index"
+import { androidBasic, backendBeginner, bangkit, bnsp, cekit, fo, frontendBeginner, frontendReact, google, jsBasic, kotlinBasic, lepkom, notion, porto, projectManagement, puskesmas, reactApp, sofw, sql, uiux, valo, ytclone } from "@assets/index"
 
 const navLinks = [
    {
@@ -381,8 +381,8 @@ const projects = [
          },
          ],
       desc: 'web-based community health center queuing application using the Laravel-9 framework which focuses on developing mechanisms for queuing and taking patient medicines This project has 3 authorization roles doctor, patient, pharmacist',
-      image: undefined,
-      link: ''
+      image: puskesmas,
+      link: 'https://github.com/DSQL-MONGKEY/app-puskesmas'
    },
    {
       title: 'Youtube Clone',
@@ -405,8 +405,8 @@ const projects = [
          }, 
          ],
       desc: 'This project provides practical experience in software development and an in-depth understanding of the technologies used in the creation of streaming video platforms such as YouTube.\n Frontend development includes user interface (UI) design, responsiveness, and user interaction and consume the API.',
-      image: undefined,
-      link: ''
+      image: ytclone,
+      link: 'https://github.com/DSQL-MONGKEY/youtube-clone'
    },
    {
       title: 'Portfolio Website',
@@ -433,8 +433,8 @@ const projects = [
          },
          ],
       desc: 'My portfolio reflects my journey in the world of development and includes a variety of projects that highlight my technical and creative skills. From intuitive user interface design to developing innovative software solutions, each project has its own unique goals.',
-      image: undefined,
-      link: ''
+      image: porto,
+      link: 'https://github.com/DSQL-MONGKEY/3Dportfolio'
    },
    {
       title: 'Google Clone',
@@ -461,8 +461,8 @@ const projects = [
          },  
          ],
       desc: 'Creating a copy or clone of Google is an interesting project and can provide experience in several aspects of web development. Implement a search engine that can handle user search queries. Understand search algorithms and how to optimize search results with Google search API.',
-      image: undefined,
-      link: ''
+      image: google,
+      link: 'https://github.com/DSQL-MONGKEY/google-clone'
    },
    {
       title: 'Notion Clone',
@@ -509,8 +509,8 @@ const projects = [
       
       Implement an organizational system that allows the creation of categories, subcategories, and labels.
       Consider using a tag or label system to help users organize their content.`,
-      image: undefined,
-      link: ''
+      image: notion,
+      link: 'https://github.com/DSQL-MONGKEY/notion-clone'
    },
    {
       title: 'Cekit',
@@ -533,8 +533,8 @@ const projects = [
          },
       ],
       desc: 'Website for check the postpaid electricity bills, consume PLN API to get the data. This site will be improve further and will add a new features to it.',
-      image: undefined,
-      link: ''
+      image: cekit,
+      link: 'https://github.com/DSQL-MONGKEY/check-pln-bills'
    },
    {
       title: 'Fo-Dashboard UI/UX',

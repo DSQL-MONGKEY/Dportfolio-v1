@@ -25,7 +25,12 @@ import sofw from './certificates/Software Engineer Basic.webp'
 import uiux from './projects/uiuxfo.png'
 import fo from './projects/fo.png'
 import valo from './projects/valoranism.png'
-
+import notion from './projects/notion.webp'
+import ytclone from './projects/ytclone.webp'
+import google from './projects/google.webp'
+import porto from './projects/porto.png'
+import cekit from './projects/cekit.png'
+import puskesmas from './projects/puskesmas.png'
 
 export {
    myCv,
@@ -48,5 +53,11 @@ export {
    sofw,
    uiux,
    fo,
-   valo
+   valo,
+   ytclone,
+   notion,
+   google,
+   porto,
+   cekit,
+   puskesmas,
 };
