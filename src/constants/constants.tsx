@@ -38,8 +38,8 @@ const navLinks = [
       icon: <GoWorkflow/>
    },
    {
-      id: 'contact',
-      title: 'Contact',
+      id: 'feeds',
+      title: 'Feeds',
       icon: <BsChatRightText/>
    },
 ]
