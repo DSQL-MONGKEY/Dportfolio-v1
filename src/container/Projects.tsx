@@ -6,6 +6,7 @@ import { styles } from "@constants/styles"
 import { DialogTitle, DialogTrigger } from "@radix-ui/react-dialog"
 import { GoWorkflow } from "react-icons/go"
 import { FaArrowTurnUp } from "react-icons/fa6";
+import { VscGithub } from "react-icons/vsc";
 
 
 const Projects = () => {
@@ -80,6 +81,13 @@ const Projects = () => {
                                  {project.desc}
                               </span>
                            </DialogDescription>
+                           <div className="flex justify-end">
+                              <a href={project.link} target="blank">
+                                 <span className="text-2xl dark:text-blue-600">
+                                    <VscGithub />
+                                 </span>
+                              </a>
+                           </div>
                         </DialogContent>
                      </Dialog>
                   </div>
