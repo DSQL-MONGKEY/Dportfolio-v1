@@ -27,7 +27,7 @@ const Feeds = () => {
                   <span className="text-[#FF2E63] dark:text-green-600">
                      Feedbacks & Get in touch
                   </span> <br /> 
-                  A few random Feeds, I hope you enjoyed with it
+                  I hope you enjoyed with it
                </p>
             </Reveal>
          </div>
