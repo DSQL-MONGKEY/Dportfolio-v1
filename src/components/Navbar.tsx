@@ -13,6 +13,12 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
    const scrolled = useScrollTop()
    const handleLinkClicked = () => setIsOpen(false)
+
+   const handleTheme  = () => {
+      setDarkTheme(!darkTheme)
+      window.localStorage.setItem("theme", !darkTheme ? 'dark' : 'ligth')
+   }
+
    return (
       <>
          <nav className={cn("sticky z-50 top-0 p-3 w-full bg-white dark:bg-[#252A34] text-center", scrolled && "boder-b shadow transition duration-300")}>
@@ -76,7 +82,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
 
                {/* Theme Toggle */}
                <div className="flex items-center box-border border-2 border-zinc-900 dark:border-white dark:text-white rounded pr-1 pb-1 active:scale-95">
-                  <button onClick={() => setDarkTheme(!darkTheme)} className="box-border border-2 border-zinc-900 dark:border-white rounded p-1">
+                  <button onClick={handleTheme} className="box-border border-2 border-zinc-900 dark:border-white rounded p-1">
                      {darkTheme ? 
                      <BsFillSunFill className="text-[20px] border-none"/> : 
                      <BsFillMoonStarsFill className="text-[20px] border-none"/> }
