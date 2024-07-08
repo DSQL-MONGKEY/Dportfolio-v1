@@ -4,6 +4,7 @@ import { SiMui, SiHtml5, SiXampp, SiIntellijidea, SiAndroidstudio, SiCisco} from
 import { IoSchoolOutline, IoLogoJavascript } from "react-icons/io5"
 import { FaCss3, FaPhp, FaReact, FaBootstrap, FaGitAlt, FaFigma, FaNodeJs, FaPython } from "react-icons/fa"
 import { TbBrandTypescript, TbBrandTailwind, TbBrandNextjs, TbBrandMysql, TbBrandMongodb, TbBrandVite, TbBrandNotion, TbBrandVscode, TbBrandKotlin, TbBrandGmail, TbBrandGolang} from "react-icons/tb"
+import { GrDocker } from "react-icons/gr";
 import { androidBasic, backendBeginner, bangkit, bnsp, cekit, fo, frontendBeginner, frontendReact, google, jsBasic, kotlinBasic, lepkom, notion, porto, projectManagement, puskesmas, reactApp, sofw, sql, uiux, valo, ytclone } from "@assets/index"
 
 const navLinks = [
@@ -179,6 +180,11 @@ const tools = [
    {
       title: 'Android Studio',
       icon: <SiAndroidstudio/>,
+      level: 'Basic'
+   },
+   {
+      title: 'Docker',
+      icon: <GrDocker/>,
       level: 'Basic'
    },
    {
