@@ -8,7 +8,7 @@ const Feeds = () => {
    
 
    return (
-      <section id="contact" className={`${styles.padding} ${styles.paddingY} h-full mt-20`}>
+      <section id="feeds" className={`${styles.padding} ${styles.paddingY} h-full mt-20`}>
          <span className="absolute right-0 text-[20px] sm:text-[30px] dark:text-white mr-10 mt-5">
             <BsChatRightText/>
          </span>
