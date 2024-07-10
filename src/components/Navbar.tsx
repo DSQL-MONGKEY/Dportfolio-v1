@@ -13,10 +13,11 @@ const Navbar = ({ darkTheme, setDarkTheme }: NavProps) => {
    const [isOpen, setIsOpen] = useState(false)
    const scrolled = useScrollTop()
    const handleLinkClicked = () => setIsOpen(false)
+   console.log(darkTheme)
 
    const handleTheme  = () => {
       setDarkTheme(!darkTheme)
-      window.localStorage.setItem("theme", !darkTheme ? 'dark' : 'ligth')
+      window.localStorage.setItem("theme", !darkTheme ? 'dark' : 'light')
    }
 
    return (
